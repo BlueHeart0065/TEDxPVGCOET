@@ -1,0 +1,139 @@
+@font-face {
+    font-family: Helvetica;
+    src: url(asset/fonts/Helvetica-Bold.ttf);
+}
+@font-face {
+    font-family: Helvetica;
+    src: url(asset/fonts/Helvetica-BoldOblique.ttf);
+}
+@font-face {
+    font-family: Helvetica;
+    src: url(asset/fonts/Helvetica-Oblique.ttf);
+}
+@font-face {
+    font-family: Helvetica;
+    src: url(asset/fonts/helvetica-compressed-5871d14b6903a.otf);
+}
+@font-face {
+    font-family: Helvetica;
+    src: url(asset/fonts/helvetica-light-587ebe5a59211.ttf);
+}
+@font-face {
+    font-family: Helvetica;
+    src: url(asset/fonts/helvetica-rounded-bold-5871d05ead8de.otf);
+}
+@font-face {
+    font-family: Helvetica;
+    src: url(asset/fonts/Helvetica.ttf); 
+    font-weight: 400;
+}
+
+
+head{
+    display: none;
+} 
+
+body{
+    background-color: #181818;
+    background-image: url(asset/images/Illustration.png);
+    background-size: 100vw;
+    height: 5124px;
+}
+
+
+.topBar{
+    /* border: 1px solid white; */
+    margin: 2vw 12.5vw 2vw 12.5vw;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Helvetica';
+    font-weight: 400;
+    font-size: 1vw;
+}
+
+.logo{
+    display: flex;
+    height: 3vw;
+    width: 12vw;
+}
+
+.topBar_options{
+    /* border: 1px solid blue; */
+    height: fit-content;
+    margin: 0.5vw 0vw 0vw auto;
+}
+
+.topBar_options a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    opacity: 0.71;
+    margin: 1.5vw 2vw 0vw 2vw;
+    letter-spacing: 0.05vw;
+}
+
+.topBar_options button{
+    background-color: transparent;
+    color: #D1291D;
+    padding: 0.5vw 2vw 0.5vw 2vw;
+    border-radius: 25px;
+    border: 2px solid #A8A7A7;
+    margin-left: 2vw;
+    font-size: 1vw;
+}
+
+.display_text{
+    font-family: 'Helvetica';
+    font-size: 3vw;
+    color: white;
+    letter-spacing: 2px;
+    /* border: 1px solid blue; */
+    height: fit-content;
+    width: fit-content;
+    margin: 8vw 0vw 0vw 12.5vw;
+    font-weight: 700;
+    line-height: 0vw;
+}
+
+.hero_list{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid white; */
+    width: fit-content;
+    height: fit-content;
+    margin: 1vw 0vw 0vw 12.5vw;
+    font-size: 1vw;
+    font-family: 'Helvetica';
+    color: white;
+}
+
+.list_row{
+    display: flex;
+    flex-direction: column;
+}
+
+.list_column{
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid gray; */
+    margin-bottom: 0.5vw;
+    font-size: 1vw;
+    letter-spacing: 1.5px;
+}
+
+.box{
+    height: 2vw;
+    width: 2vw;
+    padding: 1vw;
+    /* border: 1px solid wheat; */
+    background : linear-gradient(to bottom , #232323 , #151515);
+    border-radius: 10px;
+    margin-right: 2vw;
+}
+
+.illustration1{
+    width: 20vw;
+    height: 17vw;
+    position: absolute;
+    top: 18vw;
+    right: 18vw;
+}
