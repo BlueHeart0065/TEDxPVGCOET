@@ -81,6 +81,10 @@ body{
     font-size: 1vw;
 }
 
+.hero{
+    margin-bottom: 20vw;
+}
+
 .display_text{
     font-family: 'Helvetica';
     font-size: 3vw;
@@ -134,6 +138,89 @@ body{
     width: 20vw;
     height: 17vw;
     position: absolute;
-    top: 18vw;
+    top: 16vw;
     right: 18vw;
 }
+
+.illustration2{
+    width: 10vw;
+    height: 4vw;
+    position: absolute;
+    top: 12vw;
+    left: 31vw;
+}
+
+.X{
+    font-family: 'Helvetica'; 
+    font-size: 1vw;
+    color: #A5251B;
+    position: absolute;
+    top: 7vw;
+    right: 16vw;
+}
+
+.licencee{
+    position: absolute;
+    top: 17vw;
+    right: 21vw;
+    width: 16vw;
+    height: 20vw;
+}
+
+.name_plate{
+    background-color: #232323;
+    border-radius: 30px;
+    height: fit-content;
+    width: fit-content;
+    font-family: 'Helvetica';
+    /* border: 1px solid red; */
+    padding: 0.5vw 5vw 0.5vw 5vw;
+    color: white;
+    position: absolute;
+    top: 33vw;
+    right: 18.5vw;
+}
+
+.about_us{
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: row;
+}
+
+.about_us_images{
+    margin-left: 15vw;
+}
+
+.about_us_images img{
+    width: 20vw;
+    height: 20vw;
+}
+
+.about_us_content{
+    font-family: 'Helvetica';
+    font-size: 1vw;
+    /* border: 1px solid wheat; */
+    margin: 0vw 20vw 0vw 15vw;
+    text-align: right;
+}
+
+.about_us_content button{
+    background-color: transparent;
+    color: #D1291D;
+    padding: 0.5vw 2vw 0.5vw 2vw;
+    border-radius: 25px;
+    border: 2px solid #A8A7A7;
+    margin-top: 3vw;
+    margin-left: 2vw;
+    font-size: 1vw;
+}
+
+.Big_X{
+    position: absolute;
+    top: 55vw;
+    right: 0vw;
+    width: 20vw;
+    height: 30vw;
+    opacity: 0.7;
+}
+
