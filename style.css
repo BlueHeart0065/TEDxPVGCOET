@@ -40,6 +40,18 @@ body{
     height: 5124px;
 }
 
+button{
+    background-color: transparent;
+    color: #D1291D;
+    padding: 0.5vw 2vw 0.5vw 2vw;
+    border-radius: 25px;
+    border: 2px solid #A8A7A7;
+    margin-left: 2vw;
+    font-size: 1vw;
+    transition: all 0.3s ease;
+}
+
+
 
 .topBar{
     /* border: 1px solid white; */
@@ -59,8 +71,9 @@ body{
 
 .topBar_options{
     /* border: 1px solid blue; */
-    height: fit-content;
+    /* height: fit-content; */
     margin: 0.5vw 0vw 0vw auto;
+
 }
 
 .topBar_options a{
@@ -69,6 +82,18 @@ body{
     opacity: 0.71;
     margin: 1.5vw 2vw 0vw 2vw;
     letter-spacing: 0.05vw;
+    transition: all 0.3s ease;
+}
+
+.topBar_options a:hover{
+    opacity: 1;
+    text-shadow: 0px 0px 1vw #D1291D;
+}
+
+.topBar_options a::after{
+    color: #D1291D;
+    width: 3vw;
+    height: 1vw;
 }
 
 .topBar_options button{
@@ -122,6 +147,12 @@ body{
     margin-bottom: 0.5vw;
     font-size: 1vw;
     letter-spacing: 1.5px;
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+.list_column:hover{
+    margin-bottom: 1vw;
 }
 
 .box{
@@ -140,6 +171,8 @@ body{
     position: absolute;
     top: 16vw;
     right: 18vw;
+    transition: all 0.5s ease;
+
 }
 
 .illustration2{
@@ -165,6 +198,11 @@ body{
     right: 21vw;
     width: 16vw;
     height: 20vw;
+    transition: all 0.3s ease;
+}
+
+.licencee:hover , .illustration1:hover{
+    transform: translate(1vw, -1vw);
 }
 
 .name_plate{
@@ -186,6 +224,14 @@ body{
     display: flex;
     flex-direction: row;
     margin-bottom: 15vw;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+}
+
+.about_us.show{
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .about_us_images{
@@ -218,7 +264,7 @@ body{
 
 .Big_X{
     position: absolute;
-    top: 65vw;
+    top: 55vw;
     right: 0vw;
     width: 20vw;
     height: 30vw;
@@ -232,6 +278,14 @@ body{
     font-size: 1vw;
     color: white;
     margin-bottom: 15vw;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+}
+
+.speakers.show{
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .speakers p{
@@ -278,6 +332,14 @@ body{
     font-size: 1vw;
     color: white;
     border-bottom: 1px solid white;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+}
+
+.team.show{
+    opacity: 1;
+    transform: translateY(0);
 }
 
 
@@ -331,4 +393,11 @@ body{
     width: 40vw;
     margin: auto;
     opacity: 0.8;
+}
+
+button:hover{
+    transform: scale(1.1);
+    color: white;
+    background-color: #D1291D;
+    border: none;
 }
