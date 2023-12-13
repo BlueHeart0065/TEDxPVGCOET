@@ -185,6 +185,7 @@ body{
     /* border: 1px solid white; */
     display: flex;
     flex-direction: row;
+    margin-bottom: 15vw;
 }
 
 .about_us_images{
@@ -217,10 +218,117 @@ body{
 
 .Big_X{
     position: absolute;
-    top: 55vw;
+    top: 65vw;
     right: 0vw;
     width: 20vw;
     height: 30vw;
     opacity: 0.7;
 }
 
+.speakers{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Helvetica';
+    font-size: 1vw;
+    color: white;
+    margin-bottom: 15vw;
+}
+
+.speakers p{
+    margin: auto;
+}
+
+.speaker_images{
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 1px solid white; */
+    margin: auto;
+    width: 80vw;
+    height: 50vw;
+    margin-top: 8vw;
+}
+
+.speaker_image{
+    border: 1px solid #D6291B;
+    height: 20vw;
+    width: 20vw;
+    margin: 0vw 3vw 0vw 3vw;
+    border-radius: 10px;
+}
+
+.speakers button{
+    background-color: transparent;
+    color: #D1291D;
+    padding: 0.5vw 2vw 0.5vw 2vw;
+    border-radius: 25px;
+    border: 2px solid #A8A7A7;
+    margin-left: 2vw;
+    font-size: 1vw;
+    width: fit-content;
+    margin: auto;
+    margin-top: 3vw;
+}
+
+
+.team{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    font-family: 'Helvetica';
+    font-size: 1vw;
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+
+.team_logo{
+    display: flex;
+    flex-wrap: wrap;
+    height: 30vw;
+    width: 47vw;
+    /* border: 1px solid wheat; */
+    margin: auto;
+    margin-top: 3vw;
+}
+
+.icon{
+    width: fit-content;
+    height: fit-content;
+    /* border: 1px solid white; */
+}
+
+.icon svg{
+    margin: auto;
+    border: 1px solid white;
+    padding: 1.5vw;
+    height: 2vw;
+    width: 2vw;
+    border-radius: 10px;
+    margin: 2vw 5vw 0vw 5vw;
+}
+
+.icon p{
+    margin: 1vw auto 0vw auto;
+    text-align: center;
+}
+
+.team button{
+    background-color: transparent;
+    color: #D1291D;
+    padding: 0.5vw 2vw 0.5vw 2vw;
+    border-radius: 25px;
+    border: 2px solid #A8A7A7;
+    margin-left: 2vw;
+    font-size: 1vw;
+    width: fit-content;
+    margin: auto;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+}
+
+.team img{
+    height: 10vw;
+    width: 40vw;
+    margin: auto;
+    opacity: 0.8;
+}
