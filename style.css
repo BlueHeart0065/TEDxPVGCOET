@@ -332,7 +332,7 @@ button{
     font-family: 'Helvetica';
     font-size: 1vw;
     color: white;
-    border-bottom: 1px solid red;
+    /* border-bottom: 1px solid red; */
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
@@ -404,65 +404,76 @@ button:hover{
 }
 
 .footer{
-    background-color: rgb(0, 0, 0);
-    height: 30vw;
-    width: 100%;
+    background-color: rgb(231, 231, 231);
+    height: 25vw;
+    width: 90vw;
+    margin: auto;
+    border-radius: 30px;
     display: flex;
     font-family: 'Helvetica';
     font-size: 1vw;
     color: red;
+    margin-bottom: 2vw;
 }
 
-.card{
+.TEDxPVGCOET{
+    margin: 4vw 4vw 0vw 4vw;
+}
+
+.social_media{
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    width: 20vw;
+    /* border-top: 2px solid black; */
+    margin: 0vw 0vw 0vw 3vw;
+}
+
+.social_media a svg{
+    height: 2vw;
+    width: 2vw;
+    margin: 0vw 1vw 0vw 1vw;
+    transition: all 0.3s ease;
+    overflow: visible;
+}
+
+.social_media a svg path{
+    transition: all 0.3s ease;
+}
+
+.social_media a svg:hover path{
+    fill: #D1291D;
+    transform: scale(1.2);
+}
+
+.contact{
+    margin: 5vw 0vw 0vw 4vw;
+    color: black;
+}
+
+.contact a{
+    text-decoration: none;
+    color: black;
+}
+
+.contact ul li{
+    margin-left: -2vw;
+}
+
+
+.end_bar{
     display: flex;
     flex-direction: column;
-    width: 15vw;
-    height: 15vw;
-    border-radius: 20px;
-    border: 1px solid rgba(255, 0, 0, 0.371);
-    background-color: rgb(0, 0, 0);
-    /* box-shadow: inset 0px 0px 10vw rgb(255, 59, 59); */
-    box-shadow: rgba(255, 0, 0, 0.4) -5px 5px, rgba(255, 0, 0, 0.3) -10px 10px, rgba(255, 0, 0, 0.2) -15px 15px, rgba(255, 0, 0, 0.1) -20px 20px, rgba(255, 0, 0, 0.05) -25px 25px;
-    margin: 5vw 0vw 0vw 15vw;
-    font-size: 0.6vw;
-    text-align: center;
-    perspective: 1000px;
-}
-
-.card_inner {
-    width: 100%;
-    height: 100%;
-    transform-style: preserve-3d;
-    transition: transform 0.5s;
-  }
-
-.card:hover .card_inner {
-    transform: rotateY(180deg);
-  }
-
-  .card_front,
-  .card_back {
-    width: 100%;
-    height: 100%;
     position: absolute;
-    backface-visibility: hidden;
-  }
-
-  .card_back {
-    background-color: white;
-    border-radius: 20px;
-    transform: rotateY(180deg);
-    display: flex;
-    align-items: center;
+    width: 90vw;
+    margin-top: 20vw;
     justify-content: center;
-    font-size: 1.2em;
-    color: black;
-  }
-
-.card_front img{
-    display: flex;
-    width: 12vw;
-    height: 3vw;
-    margin: 6vw auto 0vw auto;
+    /* border: 1px solid greenyellow; */
 }
 
+.line{
+    height: 1px;
+    margin: auto;
+    background-color: black;
+    width: 83vw; 
+}
