@@ -18,6 +18,11 @@
             <a href="" class="links">Contact</a>
             <button>Register</button>
         </div>
+        <div class="topBar_toggle" onclick="toggleNavbar()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
     </div>
 
     <div class="hero">
@@ -64,16 +69,16 @@
         </div>
         <img src="asset\images\Frame 427318929.png" alt="" class="illustration2">
         <p class="X">X</p>
-        <p class="X" style="color: #F68178; right: 14vw;">X</p>
-        <p class="X" style="color: white; top: 9vw;">X</p>
-        <p class="X" style="color: #FF0404; top: 11vw; right: 12vw;">X</p>
+        <p class="X"  style="color: #F68178; right: 14vw;">X</p>
+        <p class="X"  style="color: white; top: 9vw;">X</p>
+        <p class="X"  style="color: #FF0404; top: 11vw; right: 12vw;">X</p>
         <img src="asset\images\Vector 201.png" alt="" class="illustration1">
-        <img src="asset\images\Vector 201.png" alt="" class="illustration1" style="opacity: 0.63; top: 14vw; right: 17vw;">
-        <img src="asset\images\Vector 201.png" alt="" class="illustration1" style="opacity: 0.36; top: 12vw; right: 16vw;"> 
+        <img src="asset\images\Vector 201.png" alt="" class="illustration1" id="ill1_2" style="opacity: 0.63; top: 14vw; right: 17vw;">
+        <img src="asset\images\Vector 201.png" alt="" class="illustration1" id="ill1_3" style="opacity: 0.36; top: 12vw; right: 16vw;"> 
         <img src="asset\images\Nisarg Kudgunti.png" alt="" class="licencee">
         <div class="name_plate">
-            <p style="font-size: 1.5vw;">Nisarg Kudgunti</p>
-            <p style="color: rgb(195, 195, 195); font-size: 1vw;">Licencee and Organizer</p>
+            <p id="name1">Nisarg Kudgunti</p>
+            <p style="color: rgb(195, 195, 195);" id="position">Licencee and Organizer</p>
         </div>
     </div>
 
@@ -83,10 +88,10 @@
         </div>
         <div class="about_us_content">
             <p style="font-weight: 700;">
-                <span style="color: white; font-size: 1.8vw; margin-right: 1vw;">About</span>
-                <span style="color: #D1291D; font-size: 1.9vw;">us</span>
+                <span style="color: white; margin-right: 1vw;" id="About">About</span>
+                <span style="color: #D1291D;" id="us">us</span>
             </p>
-            <p style="color: white; font-size: 1.2vw;"> 
+            <p style="color: white;" id="About_us_desc"> 
                 A TEDx event is a local gathering where live TED-like talks and performances are shared with the community. TEDx events are fully planned and coordinated independently, on a community-by-community basis. The content and design of each TEDx event is unique and developed by each organizing team but all events share these common features:
             </p>
             <button>Register</button>
@@ -95,7 +100,7 @@
     <img src="asset\images\X.png" alt="" class="Big_X">
 
     <div class="speakers">
-        <p style="font-size: 1.5vw; font-weight: 700;">
+        <p style="font-weight: 700;" id="The_Speakers">
             <span style="margin-right: 0.5vw;">The  </span>
             <span style="color: #D6291B;">Speakers</span>
         </p>
@@ -118,7 +123,7 @@
     </div>
 
     <div class="team">
-        <p style="font-weight: 700; margin: auto; font-size: 1.5vw;">
+        <p style="font-weight: 700; margin: auto;" id="Meet_The_team">
             <span style="margin-right: 0.5vw;">Meet</span>
             <span style="color: #D6291B;">the Team</span>
         </p>
@@ -290,7 +295,7 @@
 
         <div>
             <div class="contact">
-                <p style="font-size: 1.2vw; font-weight: 700;">Contact</p>
+                <p style="font-weight: 700;" id="footer_contact">Contact</p>
                 <p> PVGCOET 44, <br> Vidya Nagari, Shivdarshan,<br> Pune, MH, India 411009</p>
                 <a href=""><p>tedx@pvgcoet.ac.in</p></a>
                 <a href="">tedxpvgcoet.com</a>
@@ -301,14 +306,14 @@
         
         <div>
             <div class="contact">
-                <p style="font-size: 1.2vw; font-weight: 700;">About Us</p>
-                <p style="width: 17vw;">A TEDx event is a local gathering where live TED-like talks and performances are shared with the community. TEDx events are fully planned and coordinated independently, on a community-by-community basis.</p>
+                <p style="font-weight: 700;" id="footer_about_us">About Us</p>
+                <p id="footer_about_width">A TEDx event is a local gathering where live TED-like talks and performances are shared with the community. TEDx events are fully planned and coordinated independently, on a community-by-community basis.</p>
             </div>
         </div>
 
         <div>
             <div class="contact">
-                <p style="font-size: 1.2vw; font-weight: 700;">Site links</p>
+                <p style="font-weight: 700;" id="footer_site_links">Site links</p>
                 <ul>
                     <li><a href="">Home</a></li>
                     <li><a href="">Team 2023-24</a></li>

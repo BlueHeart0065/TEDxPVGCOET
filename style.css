@@ -77,6 +77,20 @@ button{
 
 }
 
+.topBar_toggle{
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar{
+    height: 0.2vw;
+    width: 2vw;
+    background-color: #D1291D;
+    margin: 0.4vw 0;
+    border-radius: 10px;
+}
+
 .topBar_options a{
     text-decoration: none;
     color: rgb(255, 255, 255);
@@ -220,6 +234,14 @@ button{
     right: 18.5vw;
 }
 
+#name1{
+    font-size: 1.5vw;
+}
+
+#position{
+    font-size: 1vw;
+}
+
 .about_us{
     /* border: 1px solid white; */
     display: flex;
@@ -252,6 +274,18 @@ button{
     text-align: right;
 }
 
+#About , #us{
+    font-size: 1.8vw;
+}
+
+#us{
+    font-size: 1.9vw;
+}
+
+#About_us_desc{
+    font-size: 1.2vw;
+}
+
 .about_us_content button{
     background-color: transparent;
     color: #D1291D;
@@ -282,6 +316,10 @@ button{
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+}
+
+#The_Speakers{
+    font-size: 1.5vw;
 }
 
 .speakers.show{
@@ -341,6 +379,10 @@ button{
 .team.show{
     opacity: 1;
     transform: translateY(0);
+}
+
+#Meet_The_team{
+    font-size: 1.5vw;
 }
 
 
@@ -460,6 +502,13 @@ button:hover{
     margin-left: -2vw;
 }
 
+#footer_about_us , #footer_contact , #footer_site_links{
+    font-size: 1.2vw;
+}
+
+#footer_about_width{
+    width: 17vw;
+}
 
 .end_bar{
     display: flex;
@@ -476,4 +525,306 @@ button:hover{
     margin: auto;
     background-color: black;
     width: 83vw; 
+}
+
+
+@media only screen and (max-width : 768px){
+
+    button{
+        font-size: 4vw;
+        width: fit-content;
+        padding: 2vw 6vw 2vw 6vw;
+    }
+
+    .topBar{
+        margin: 7vw 4vw 30vw 4vw;
+        font-size: 4vw;
+    }
+
+    .logo{
+        height: 10vw;
+        width: 40vw;
+    }
+
+    .topBar_options{
+        display: none;
+        /* display: flex; */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0vw;
+        width: fit-content;
+        padding: 20vw;
+        text-align: center;
+        background-color: #762621;
+        border-radius: 30px;
+    }
+
+    .topBar_options.show{
+        display: flex;
+    }
+
+    .topBar_toggle{
+        display: flex;
+        margin-left: 43vw;
+        margin-top: 1vw;
+    }
+
+    .bar{
+        height: 1vw;
+        width: 8vw;
+        margin: 0.8vw 0;
+    }
+
+    .topBar_options a{
+        margin-top: 10vw;
+    }
+
+    .topBar_options button{
+        font-size: 4vw;
+        margin: 10vw auto 0vw auto;   
+        padding: 2vw 6vw 2vw 6vw;
+    }
+
+    .hero{
+        /* display: none; */
+        /* border: 1px solid white; */
+    }
+
+    .display_text{
+        font-size: 10vw;
+        margin: 0vw auto 0vw auto;
+        text-align: center;
+    }
+
+    .hero_list{
+        margin:auto;
+    }
+
+    .list_row{
+        flex-direction: column;
+    }
+
+    .list_column{
+        /* border: 1px solid greenyellow; */
+        font-size: 3vw;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 5vw;
+    }
+
+    .box{
+        height: 7vw;
+        width: 7vw;
+        padding: 5vw;
+        margin: auto;
+        background: white;
+    }
+
+    .illustration1{
+        width: 60vw;
+        height: 50vw;
+        position:relative;
+        display: flex;
+        margin: 30vw 0vw 0vw 37vw;
+    }
+
+    #ill1_2{
+        /* display: none; */
+        margin: -52vw 0vw 0vw 38vw;
+    }
+
+    #ill1_3{
+        margin: -53vw 0vw 0vw 39vw;
+    }
+
+    .X{
+        position: relative;
+        left: 0vw;
+        right: 0vw;
+        font-size: 3vw;
+        text-align: center;
+    }
+
+    
+    .licencee{
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 40vw;
+        height: 50vw;
+        position: relative;
+        top: -29vw;
+        left: 28vw;
+    }
+
+    .name_plate{
+        position: relative;
+        font-size: 4vw;
+        top: -40vw;
+        left: 22vw;
+        border: 0.5px solid white;
+        padding: 2vw 10vw 2vw 10vw;
+        background-color: rgb(31, 31, 31);
+        text-align: center;
+    }
+
+    #name1{
+        font-size: 5vw;
+    }
+
+    #position{
+        font-size: 3vw;
+    }
+
+    .illustration2{
+        display: none;
+    }
+
+    .about_us{
+        flex-direction: column;
+    }
+
+    .about_us_images img{
+        display: none;
+    }
+
+    .about_us_content{
+        text-align: center;
+        margin: auto;
+    }
+
+    #About , #us{
+        font-size: 6vw;
+    }
+
+    #About_us_desc{
+        font-size: 5vw;
+        width: 70vw;
+    }
+
+    .about_us_content button{
+        font-size: 4vw;
+        padding: 2vw 10vw 2vw 10vw;
+    }
+
+    .speakers{
+        font-size: 4vw;
+    }
+
+    #The_Speakers{
+        font-size: 6vw;
+    }
+
+    .speaker_images{
+        height: fit-content;
+    }
+    
+    .speakers{
+        margin-top: 40vw;
+    }
+
+    .speaker_image{
+        height: 75vw;
+        width: 75vw;
+        margin-top: 10vw;
+        margin-bottom: 10vw;
+    }
+
+    .speakers button{
+        font-size: 4vw;
+        padding: 2vw 10vw 2vw 10vw;
+        margin-top: 10vw;
+    }
+
+    .team{
+        /* display: none; */
+        font-size: 4vw;
+        margin-top: 40vw;
+    }
+
+    .team_logo{
+        /* border: 1px solid blue; */
+        width: 58vw;
+        height: fit-content;
+        margin-top: 20vw;
+    }
+
+    .icon svg{
+        height: 10vw;
+        width: 10vw;
+        padding: 4vw;
+    }
+
+    .icon p{
+        margin-bottom: 10vw;
+        margin-top: 4vw;
+    }
+
+    .team button{
+        font-size: 4vw;
+        padding: 2vw 10vw 2vw 10vw;
+    }
+
+    #Meet_The_team{
+        font-size: 6vw;
+    }
+
+    .team img{
+        margin-top: 30vw;
+        height: 25vw;
+        width: 100vw;
+    }
+    
+    .footer{
+        /* display: none; */
+        /* flex-direction: column; */
+        flex-direction: column;
+        height: fit-content;
+        width: 100%;
+        border-radius: 0px;
+    }
+
+    .TEDxPVGCOET{
+        transform: scale(3.5);
+        margin: 8vw 0vw 0vw 58vw;
+    }
+
+    .social_media{
+        margin: 5vw 0vw 0vw 5vw;
+    }
+
+    .social_media a svg{
+        height: 10vw;
+        width: 10vw;
+        margin-right: 5vw;
+    }
+
+    .contact{
+        margin-top: 10vw;
+        font-size: 4vw;
+    }
+
+    #footer_about_us , #footer_contact , #footer_site_links{
+        font-size: 5vw;
+    }
+
+    #footer_about_width{
+        width: 80vw;
+    }
+
+    .contact ul li{
+        margin-left: -7vw;
+        margin-bottom: 4vw;
+    }
+
+    .end_bar{
+        display: none;
+    }
+
+
+
+
+
 }
