@@ -12,21 +12,21 @@ $(document).ready(function() {
         var teamPos = teamSection.offset().top;
 
         // Adjust the 200 value based on your layout
-        if (scrollPos > aboutMePos - windowHeight + 200) {
+        if (scrollPos > aboutMePos - windowHeight ) {
             aboutMeSection.addClass('show');
         }
         else{
             aboutMeSection.removeClass('show');
         }
 
-        if (scrollPos > speakerPos - windowHeight + 200) {
+        if (scrollPos > speakerPos - windowHeight ) {
             speakerSection.addClass('show');
         }
         else{
             speakerSection.removeClass('show');
         }
 
-        if (scrollPos > teamPos - windowHeight + 200) {
+        if (scrollPos > teamPos - windowHeight ) {
             teamSection.addClass('show');
         }
         else{
