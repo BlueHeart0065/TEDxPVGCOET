@@ -28,4 +28,4 @@ This website is designed to provide information about our TEDx event, including 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/tedx-college-website.git
+   https://github.com/BlueHeart0065/TEDxPVGCOET.git
