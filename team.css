@@ -129,7 +129,7 @@ button{
     height: 30vw;
     width: 80vw;
     border-radius: 30px;
-    margin: 3vw auto 0vw auto;
+    margin: 5vw auto 0vw auto;
 }
 
 .hero h1{
@@ -195,76 +195,140 @@ button{
 }
 
 .photo_card img{
-    height: 12vw;
-    width: 10vw;
-    margin: 4vw auto 0vw auto;
+    height: 10vw;
+    width: 10.5vw;
+    margin: 3vw auto 0vw auto;
 }
 
 .name_bar{
     background-color: white;
     color: black;
     text-align: center;
-    height: 100%;
+    /* height: 100%; */
+    height: 3vw;
     padding: 1vw;
     font-weight: 500;
+}
+
+.name_bar p{
+    color: #777777;
+    font-size: 0.8vw;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.heading{
+    width: fit-content;
+    height: fit-content;
+    /* border: 1px solid greenyellow; */
+    font-family: 'Helvetica';
+    color: white;
+    margin: 10vw 0vw 0vw 10vw;
 }
 
 .Team_left{
     /* border: 1px solid pink; */
     width: 80vw;
-    margin: 10vw auto 0vw auto;
+    margin: 2vw auto 0vw auto;
     color: white;
     font-family: 'Helvetica';
     font-size: 1vw;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.team_desc{
+    width: 28vw;
+    margin: 4vw 12vw 0vw 0vw;
+    font-size: 1.3vw;
 }
 
 .dnp_image{
     height: 17vw;
-    margin: 2vw 0vw 2vw 4vw;
+    margin: 2vw 4vw 2vw 0vw;
 }
 
-.lno_image{
-    height: 17vw;
-    margin: 2vw 12vw 2vw 0vw;
+
+.footer{
+    background-color: rgb(231, 231, 231);
+    height: 25vw;
+    width: 90vw;
+    margin: 8vw auto 8vw auto;
+    border-radius: 30px;
+    display: flex;
+    font-family: 'Helvetica';
+    font-size: 1vw;
+    color: red;
+    margin-bottom: 2vw;
+    /* display: none; */
 }
 
-.LnO{
-    /* border: 1px solid greenyellow; */
-    justify-content: right;
-    justify-items: right;
+.TEDxPVGCOET{
+    margin: 4vw 4vw 0vw 4vw;
 }
 
-.LnO .line{
-    position: relative;
-    right: 0vw;
-}
-
-.LnO h2{
-    text-align: right;
-
-}
-
-.row2{
+.social_media{
     display: flex;
     flex-direction: row;
+    height: fit-content;
+    width: 20vw;
+    /* border-top: 2px solid black; */
+    margin: 0vw 0vw 0vw 3vw;
 }
 
-.row2 p{
-    width: 30vw;
+.social_media a svg{
+    height: 2vw;
+    width: 2vw;
+    margin: 0vw 1vw 0vw 1vw;
+    transition: all 0.3s ease;
+    overflow: visible;
+}
+
+.social_media a svg path{
+    transition: all 0.3s ease;
+}
+
+.social_media a svg:hover path{
+    fill: #D1291D;
+    transform: scale(1.2);
+}
+
+.contact{
+    margin: 5vw 0vw 0vw 4vw;
+    color: black;
+}
+
+.contact a{
+    text-decoration: none;
+    color: black;
+}
+
+.contact ul li{
+    margin-left: -2vw;
+}
+
+#footer_about_us , #footer_contact , #footer_site_links{
     font-size: 1.2vw;
-    margin-left: 5vw;   
-    margin-top: 5vw;
 }
 
-.row3 p{
-    margin-left: 0vw;
-    margin-right: 15vw;
+#footer_about_width{
+    width: 17vw;
 }
 
-.row3 .photo_card{
-    margin-right: auto;
-    margin-left: auto;
-    position: relative;
+.end_bar{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 90vw;
+    margin-top: 20vw;
+    justify-content: center;
+    /* border: 1px solid greenyellow; */
 }
+
+.line2{
+    height: 1px;
+    margin: auto;
+    background-color: black;
+    width: 83vw; 
+}
+
