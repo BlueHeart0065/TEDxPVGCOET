@@ -1,4 +1,4 @@
-# TEDx College Name Website
+# TEDxPVGCOET Website
 
 Welcome to the TEDxPVGCOET Website! This project is a showcase of PVGCOET's TEDx event, featuring inspiring talks and discussions.
 
