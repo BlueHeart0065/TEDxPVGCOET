@@ -366,6 +366,10 @@ button:hover{
 
 @media only screen and (max-width : 768px){
 
+    *{
+        -webkit-tap-highlight-color: transparent;
+    }
+
     button{
         font-size: 4vw;
         width: fit-content;
@@ -383,21 +387,25 @@ button:hover{
     }
 
     .topBar_options{
-        display: none;
-        /* display: flex; */
+        /* display: none; */
+        display: flex;
+        opacity: 0;
         flex-direction: column;
         position: absolute;
-        top: 60px;
+        top: 25vw;
         right: 0vw;
-        width: fit-content;
-        padding: 20vw;
+        /* width: fit-content; */
+        width: 100%;
+        padding: 5vw 0vw 15vw 0vw;
         text-align: center;
-        background-color: #762621;
-        border-radius: 30px;
+        /* background-color: #762621; */
+        background-color: white;
+        /* border-radius: 30px; */
+        transition: all 0.5s ease-in-out;
     }
 
     .topBar_options.show{
-        display: flex;
+        opacity: 1;
     }
 
     .topBar_toggle{
@@ -414,6 +422,10 @@ button:hover{
 
     .topBar_options a{
         margin-top: 10vw;
+        color: black;
+        margin: 10vw auto 0vw auto;
+        font-weight: 500;
+        font-size: 5vw;
     }
 
     .topBar_options button{
@@ -455,7 +467,11 @@ button:hover{
     .head_layout{
         padding: 0vw;
         margin-left: 0.9vw;
+        margin-right: 3vw;
+        margin-bottom: 5vw;
         text-align: center;
+        /* border: 1px solid burlywood; */
+
     }
 
     .line{
@@ -467,6 +483,10 @@ button:hover{
         height: 50vw;
         width: 37vw;
         font-size: 3.5vw;
+    }
+
+    .head_layout .photo_card{
+        margin: 1vw auto 0vw auto;
     }
 
     .photo_card img{

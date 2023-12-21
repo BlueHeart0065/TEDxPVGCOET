@@ -2,6 +2,7 @@ $(document).ready(function() {
     var aboutMeSection = $('.about_us');
     var speakerSection = $('.speakers');
     var teamSection = $('.team');
+    var goalsSection = $('.goals');
 
 
     $(window).scroll(function() {
@@ -10,6 +11,7 @@ $(document).ready(function() {
         var aboutMePos = aboutMeSection.offset().top;
         var speakerPos = speakerSection.offset().top;
         var teamPos = teamSection.offset().top;
+        var goalsPos = goalsSection.offset().top;
 
         // Adjust the 200 value based on your layout
         if (scrollPos > aboutMePos - windowHeight ) {
@@ -17,6 +19,13 @@ $(document).ready(function() {
         }
         else{
             aboutMeSection.removeClass('show');
+        }
+
+        if (scrollPos > goalsPos - windowHeight ) {
+            goalsSection.addClass('show');
+        }
+        else{
+            goalsSection.removeClass('show');
         }
 
         if (scrollPos > speakerPos - windowHeight ) {
@@ -32,6 +41,8 @@ $(document).ready(function() {
         else{
             teamSection.removeClass('show');
         }
+
+       
 
     
     });
