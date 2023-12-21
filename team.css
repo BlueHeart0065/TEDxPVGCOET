@@ -246,6 +246,27 @@ button{
 .dnp_image{
     height: 17vw;
     margin: 2vw 4vw 2vw 0vw;
+
+}
+
+#lno_image{
+    margin-right: 7.5vw;
+}
+
+#mnc_image{
+    width: 36vw;
+}
+
+#fns_image{
+    margin-right: 7vw;
+}
+
+#ed_image{
+    margin-right: 17.5vw;
+}
+
+#cu_image{
+    margin-right: 16.5vw;
 }
 
 
@@ -332,3 +353,238 @@ button{
     width: 83vw; 
 }
 
+.photo_card .width_fix{
+    width: 9vw;
+}
+
+button:hover{
+    transform: scale(1.05);
+    color: white;
+    background-color: #D1291D;
+    border-color: #D1291D;
+}
+
+@media only screen and (max-width : 768px){
+
+    button{
+        font-size: 4vw;
+        width: fit-content;
+        padding: 2vw 6vw 2vw 6vw;
+    }
+
+    .topBar{
+        margin: 7vw 4vw 15vw 4vw;
+        font-size: 4vw;
+    }
+
+    .logo{
+        height: 10vw;
+        width: 40vw;
+    }
+
+    .topBar_options{
+        display: none;
+        /* display: flex; */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0vw;
+        width: fit-content;
+        padding: 20vw;
+        text-align: center;
+        background-color: #762621;
+        border-radius: 30px;
+    }
+
+    .topBar_options.show{
+        display: flex;
+    }
+
+    .topBar_toggle{
+        display: flex;
+        margin-left: 43vw;
+        margin-top: 1vw;
+    }
+
+    .bar{
+        height: 1vw;
+        width: 8vw;
+        margin: 0.8vw 0;
+    }
+
+    .topBar_options a{
+        margin-top: 10vw;
+    }
+
+    .topBar_options button{
+        font-size: 4vw;
+        margin: 10vw auto 0vw auto;   
+        padding: 2vw 6vw 2vw 6vw;
+    }
+
+    .hero{
+        /* display: none; */
+        height: 80vw;
+        width: 90vw;
+        margin: 0vw auto 10vw auto;
+    }
+
+    .hero h1{
+        font-size: 9vw;
+        margin: 15vw auto 0vw auto;
+    }
+
+    .team_display{
+        width: 80vw;
+        height: 13vw;
+        margin: 8vw auto 0vw auto;
+    }
+
+    .hero button{
+        margin: 10vw auto 0vw auto;
+    }
+
+    .heads{
+        /* display: none; */
+        /* border: 1px solid burlywood; */
+        width: 85vw;
+        font-size: 4vw;
+        margin-bottom: 30vw;
+    }
+
+    .head_layout{
+        padding: 0vw;
+        margin-left: 0.9vw;
+        text-align: center;
+    }
+
+    .line{
+        width: 30vw;
+        margin : -2vw auto 0vw auto
+    }
+
+    .photo_card{
+        height: 50vw;
+        width: 37vw;
+        font-size: 3.5vw;
+    }
+
+    .photo_card img{
+        transform: scale(3);
+        margin: 18vw auto 0vw auto;
+    }
+
+    .name_bar{
+        height: 10vw;
+        margin-top: 10vw;
+        padding: 2vw;
+    }
+
+    .name_bar p{
+        font-size: 2.5vw;
+        margin-top: 1vw;
+    }
+
+    .Team_left{
+        /* display: none; */
+        /* border: 1px solid greenyellow; */
+        width: 85vw;
+        margin-bottom: 30vw;
+    }
+
+    .Team_left .photo_card{
+        margin-left: 2.5vw;
+        margin-right: 1vw;
+    }
+
+    .team_desc{
+        display: none;
+    }
+
+    .dnp_image{
+        /* border: 1px solid wheat; */
+        margin-top: 10vw;
+        height: 40vw;
+        margin-bottom: 10vw;
+        margin-left: 2vw;
+    }
+
+    #lno_image{
+        margin-left: 5vw;
+    }
+
+    #mnc_image{
+        width: 80vw;
+    }
+
+    #fns_image{
+        margin-left: 5vw;
+    }
+
+    #ed_image{
+        margin-left: 15vw;
+    }
+
+    #cu_image{
+        margin-left: 15vw;
+    }
+
+    .heading{
+        /* display: none; */
+        font-size: 3.5vw;
+        width: 60vw;
+        font-weight: 200;
+        text-align: center;
+        margin: 10vw auto 0vw auto;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        width:auto;
+        border-radius: 0px;
+        margin: 0vw 0vw 0vw 0vw;
+    }
+
+    .TEDxPVGCOET{
+        transform: scale(3.5);
+        margin: 8vw 0vw 0vw 20vw;
+        width: fit-content;
+    }
+
+    .social_media{
+        margin: 5vw 0vw 0vw 5vw;
+    }
+
+    .social_media a svg{
+        height: 10vw;
+        width: 10vw;
+        margin-right: 5vw;
+    }
+
+    .contact{
+        margin-top: 10vw;
+        font-size: 4vw;
+    }
+
+    #footer_about_us , #footer_contact , #footer_site_links{
+        font-size: 5vw;
+    }
+
+    #footer_about_width{
+        width: 80vw;
+    }
+
+    .contact ul li{
+        margin-left: -7vw;
+        margin-bottom: 4vw;
+    }
+
+    .end_bar{
+        display: none;
+    }
+
+
+    
+}

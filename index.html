@@ -12,9 +12,9 @@
     <div class="topBar">
         <img src="asset\images\TEDxPVGCOET Logo without bg.png" alt="" class="logo">
         <div class="topBar_options">
-            <a href="" class="links">Events</a>
+            <a href="" class="links" id="Home">Home</a>
             <a href="" class="links">Speakers</a>
-            <a href="" class="links">Team</a>
+            <a href="" class="links" id="Team">Team</a>
             <a href="" class="links">Contact</a>
             <button>Register</button>
         </div>
@@ -226,7 +226,7 @@
                 <p>Design & <br> Production</p>
             </div>
         </div>
-        <button>View Full Team</button>
+        <button id="fullTeam">View Full Team</button>
         <img src="asset\images\Team_leads.png" alt="">
     </div>
 
@@ -333,5 +333,19 @@
         </div>
         
     </footer>
+
+    <script>
+        var Team = document.getElementById("Team");
+        var fullTeam = document.getElementById("fullTeam");
+
+        Team.addEventListener('click' , function(event){
+            event.preventDefault();
+            window.location.href = 'team.html'
+        });
+        fullTeam.addEventListener('click' , function(event){
+            event.preventDefault();
+            window.location.href = 'team.html'
+        });
+    </script>
 </body>
 </html>
