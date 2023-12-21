@@ -306,6 +306,55 @@ button{
     opacity: 0.7;
 }
 
+.goals{
+    font-family: 'Helvetica';
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20vw;
+}
+
+#Our_goals{
+    text-align: center;
+    color: white;
+    font-size: 1.5vw;
+}
+
+.goals_content{
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid blue; */
+    width: 80vw;
+    margin: 4vw auto 0vw auto;
+    color: white;
+    flex-wrap: wrap;
+}
+
+.goals_content img{
+    height: 30vw;
+    margin: 5vw 0vw 0vw 0vw;
+    border-bottom: 1px solid white;
+}
+
+.content_row , .content_row2{
+    display: flex;
+    flex-direction: column;
+    margin: 0vw 0vw 0vw 2vw;
+    /* border: 1px solid red; */
+}
+
+.content_row{
+    margin: 0vw;
+}
+
+.content_row p , .content_row2 p{
+    width: 18vw;
+    margin: 3vw 2vw 0vw 2vw;
+}
+
+.content_row2 p{
+    margin-left: 0vw;
+}
+
 .speakers{
     display: flex;
     flex-direction: column;
@@ -705,11 +754,33 @@ button:hover{
         padding: 2vw 10vw 2vw 10vw;
     }
 
+    .goals{
+        margin-top: 40vw;
+    }
+
+    .goals_content{
+        width: 87vw;
+        /* border: 1px solid blue; */
+    }
+
+    .goals_content img{
+        display: none;
+    }
+
+    .content_row p, .content_row2 p{
+        width: 30vw;
+        text-align: center;
+        border: 1px solid #D1291D;
+        padding: 4vw;
+        border-radius: 10px;
+        background-color: #7627219f;
+    }
+
     .speakers{
         font-size: 4vw;
     }
 
-    #The_Speakers{
+    #The_Speakers , #Our_goals{
         font-size: 6vw;
     }
 
