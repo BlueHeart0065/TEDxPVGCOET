@@ -35,7 +35,7 @@ head{
 
 body{
     background-color: #181818;
-    background-image: url(asset/images/Illustration.png);
+    background-image: url(../asset/images/Illustration.png);
     background-size: 100vw;
     /* height: 5124px; */
     margin: 0;
@@ -124,7 +124,7 @@ button{
 .hero{
     display: flex;
     flex-direction: column;
-    background-image: url(asset/images/Team_bg.png);
+    background-image: url(../asset/images/Team_bg.png);
     background-size: cover ;
     height: 30vw;
     width: 80vw;
@@ -188,7 +188,7 @@ button{
     width: 14vw;
     border: 1px solid white;
     border-radius: 10px;
-    background-image: url(asset/images/Photo_card_bg.png);
+    background-image: url(../asset/images/Photo_card_bg.png);
     background-size: cover;
     overflow: hidden;
     margin: 2vw 4vw 2vw 0vw;
