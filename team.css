@@ -198,6 +198,7 @@ button{
     height: 10vw;
     width: 10.5vw;
     margin: 3vw auto 0vw auto;
+    transition: all 0.5s ease-in-out;
 }
 
 .name_bar{
@@ -208,6 +209,7 @@ button{
     height: 3vw;
     padding: 1vw;
     font-weight: 500;
+    transition: all 0.3s ease-in-out;
 }
 
 .name_bar p{
@@ -216,6 +218,36 @@ button{
     font-weight: 600;
     letter-spacing: 1px;
 }
+
+
+/* DONT DELETE THE COMMENTED LINES ABOVE , IT WILL BE USED IF SOCIAL ACCOUNTS OF ALL MEMBERS IS TO BE DISPLAYED*/
+
+/* .social_accounts{
+    display: none;
+    border: 1px solid blue;
+    height: 3vw;
+    width: 8vw;
+    margin: 1vw auto 1vw auto;
+    transition: all 0.5s ease;
+}
+
+.social_accounts img{
+    width: 3vw;
+    height: 3vw;
+    margin: 0vw;
+}
+
+.photo_card:hover .name_bar{
+    transform: translateY(-3vw);
+}
+
+.photo_card:hover .social_accounts{
+    display: flex;
+}
+
+.photo_card:hover img{
+    transform: scale(0.8);
+} */
 
 .heading{
     width: fit-content;

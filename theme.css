@@ -1,0 +1,42 @@
+@font-face {
+    font-family: Helvetica;
+    src: url(asset/fonts/Helvetica-Bold.ttf);
+}
+@font-face {
+    font-family: Helvetica;
+    src: url(asset/fonts/Helvetica-BoldOblique.ttf);
+}
+@font-face {
+    font-family: Helvetica;
+    src: url(asset/fonts/Helvetica-Oblique.ttf);
+}
+@font-face {
+    font-family: Helvetica;
+    src: url(asset/fonts/helvetica-compressed-5871d14b6903a.otf);
+}
+@font-face {
+    font-family: Helvetica;
+    src: url(asset/fonts/helvetica-light-587ebe5a59211.ttf);
+}
+@font-face {
+    font-family: Helvetica;
+    src: url(asset/fonts/helvetica-rounded-bold-5871d05ead8de.otf);
+}
+@font-face {
+    font-family: Helvetica;
+    src: url(asset/fonts/Helvetica.ttf); 
+    font-weight: 400;
+}
+
+
+head{
+    display: none;
+} 
+
+body{
+    background-color: #181818;
+    background-image: url(asset/images/Theme_bg.png);
+    background-size: 100vw;
+    height: 5124px;
+    margin: 0;
+}
