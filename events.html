@@ -13,7 +13,7 @@
         <img src="asset\images\TEDxPVGCOET Logo without bg.png" alt="" class="logo">
         <div class="topBar_options">
             <a href="" class="links" id="Home">Home</a>
-            <a href="" class="links">Speakers</a>
+            <a href="" class="links" id="Events">Events</a>
             <a href="" class="links" id="Team">Team</a>
             <a href="" class="links">Contact</a>
             <button>Register</button>
@@ -175,5 +175,21 @@
         </div>
         
     </footer>
+
+    <script>
+        var Team = document.getElementById("Team");
+        var Home = document.getElementById("Home");
+
+        Team.addEventListener('click' , function(event){
+            event.preventDefault();
+            window.location.href = 'team.html'
+        });
+
+        Home.addEventListener('click' , function(event){
+            event.preventDefault();
+            window.location.href = 'index.html'
+        });
+        
+    </script>
 </body>
 </html>

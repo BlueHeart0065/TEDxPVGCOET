@@ -12,7 +12,7 @@
         <img src="asset\images\TEDxPVGCOET Logo without bg.png" alt="" class="logo">
         <div class="topBar_options">
             <a href="" class="links" id="Home">Home</a>
-            <a href="" class="links" id="Speakers">Speakers</a>
+            <a href="" class="links" id="Events">Events</a>
             <a href="" class="links" id="Team">Team</a>
             <a href="" class="links">Contact</a>
             <button>Register</button>
@@ -709,11 +709,18 @@
 
     <script>
         var Home = document.getElementById("Home");
+        var events = document.getElementById("Events");
 
         Home.addEventListener('click' , function(event){
             event.preventDefault();
             window.location.href = 'index.html'
         });
+
+        events.addEventListener('click' , function(event){
+            event.preventDefault();
+            window.location.href = 'events.html'
+        });
+
     </script>
 </body>
 </html>
