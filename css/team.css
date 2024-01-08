@@ -286,6 +286,19 @@ button {
     /* Make the social media icons visible on hover */
 }
 
+.photo_card .website-lead-links a {
+    display: none;
+    /* Hide the social media icons by default */
+}
+
+.photo_card:hover .website-lead-links a {
+    display: inline-block;
+    color: white;
+    padding: 0 3vh 0 3vh;
+    transform: translateY(-4vh) scale(1.5);
+    /* Make the social media icons visible on hover */
+}
+
 .photo_card:hover .social_accounts {
     display: flex;
 
