@@ -295,7 +295,7 @@ button {
     display: inline-block;
     color: white;
     padding: 0 3vh 0 3vh;
-    transform: translateY(-4vh) scale(1.5);
+    transform: translateY(-3vh) scale(1.5);
     /* Make the social media icons visible on hover */
 }
 
