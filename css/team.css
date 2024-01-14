@@ -247,19 +247,6 @@ button {
     transform: translateY(-3vw);
 }
 
-.photo_card .lead-links a {
-    display: none;
-    /* Hide the social media icons by default */
-}
-
-.photo_card:hover .lead-links a {
-    display: inline-block;
-    color: white;
-    padding: 0 5.5vh 0 5.5vh;
-    transform: translateY(-3vh) scale(1.5);
-    /* Make the social media icons visible on hover */
-}
-
 .photo_card .social-links a {
     display: none;
     /* Hide the social media icons by default */
@@ -268,30 +255,17 @@ button {
 .photo_card:hover .social-links a {
     display: inline-block;
     color: white;
-    padding: 0 5.5vh 0 5.5vh;
-    transform: translateY(-4vh) scale(1.5);
-    /* Make the social media icons visible on hover */
-}
-
-.photo_card .website-links a {
-    display: none;
-    /* Hide the social media icons by default */
-}
-
-.photo_card:hover .website-links a {
-    display: inline-block;
-    color: white;
     padding: 0 3.4vh 0 3.4vh;
     transform: translateY(-4vh) scale(1.5);
     /* Make the social media icons visible on hover */
 }
 
-.photo_card .website-lead-links a {
+.photo_card .lead-links a {
     display: none;
     /* Hide the social media icons by default */
 }
 
-.photo_card:hover .website-lead-links a {
+.photo_card:hover .lead-links a {
     display: inline-block;
     color: white;
     padding: 0 3vh 0 3vh;
