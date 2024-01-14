@@ -14,7 +14,7 @@
             <a href="" class="links" id="Home">Home</a>
             <a href="" class="links" id="Events">Events</a>
             <a href="" class="links" id="Team">Team</a>
-            <a href="" class="links">Contact</a>
+            <a href="" class="links" id="Theme">Theme</a>
             <button>Register</button>
         </div>
         <div class="topBar_toggle" onclick="toggleNavbar()">
@@ -1205,6 +1205,8 @@
     <script>
         var Home = document.getElementById("Home");
         var events = document.getElementById("Events");
+        var theme = document.getElementById('Theme');
+
 
         Home.addEventListener('click' , function(event){
             event.preventDefault();
@@ -1214,6 +1216,11 @@
         events.addEventListener('click' , function(event){
             event.preventDefault();
             window.location.href = 'events.html'
+        });
+
+        theme.addEventListener('click' , function(event){
+            event.preventDefault();
+            window.location.href = 'theme.html'
         });
 
     </script>
