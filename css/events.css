@@ -1,30 +1,30 @@
 @font-face {
     font-family: Helvetica;
-    src: url(asset/fonts/Helvetica-Bold.ttf);
+    src: url(/asset/fonts/Helvetica-Bold.ttf);
 }
 @font-face {
     font-family: Helvetica;
-    src: url(asset/fonts/Helvetica-BoldOblique.ttf);
+    src: url(/asset/fonts/Helvetica-BoldOblique.ttf);
 }
 @font-face {
     font-family: Helvetica;
-    src: url(asset/fonts/Helvetica-Oblique.ttf);
+    src: url(/asset/fonts/Helvetica-Oblique.ttf);
 }
 @font-face {
     font-family: Helvetica;
-    src: url(asset/fonts/helvetica-compressed-5871d14b6903a.otf);
+    src: url(/asset/fonts/helvetica-compressed-5871d14b6903a.otf);
 }
 @font-face {
     font-family: Helvetica;
-    src: url(asset/fonts/helvetica-light-587ebe5a59211.ttf);
+    src: url(/asset/fonts/helvetica-light-587ebe5a59211.ttf);
 }
 @font-face {
     font-family: Helvetica;
-    src: url(asset/fonts/helvetica-rounded-bold-5871d05ead8de.otf);
+    src: url(/asset/fonts/helvetica-rounded-bold-5871d05ead8de.otf);
 }
 @font-face {
     font-family: Helvetica;
-    src: url(asset/fonts/Helvetica.ttf); 
+    src: url(/asset/fonts/Helvetica.ttf); 
     font-weight: 400;
 }
 
@@ -135,6 +135,8 @@ button{
     transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
+
+
 #The_Speakers{
     font-size: 2vw;
     font-weight: 900;
@@ -160,11 +162,43 @@ button{
 }
 
 .speaker_image{
-    border: 1px solid #D6291B;
+    border: 3px solid #D6291B;
     height: 20vw;
     width: 20vw;
     margin: 0vw 3vw 0vw 3vw;
     border-radius: 10px;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.speaker_image div{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: #d1291d8b;
+    height: 100%;
+    padding: 1.5vw 2vw;
+    color: white;
+    margin: auto;
+    font-size: 1.2vw;
+    text-align: center;
+    margin-top: 16vw;
+    transition: all 0.5s ease;
+    font-weight: 500;
+}
+
+.speaker_image:hover div{
+    transform: translateY(-16vw);
+}
+
+.speaker_image div p{
+    font-size: 1vw;
+}
+
+.speaker_image div button{
+    color: white;
+    margin: 0.5vw 0vw 0vw 0vw;
+    font-size: 0.8vw;
 }
 
 .speakers button{
@@ -264,6 +298,18 @@ button{
     width: 83vw; 
 }
 
+.contact button{
+    margin: 1.5vw 0vw 0vw 0vw;
+
+}
+
+button:hover{
+    transform: scale(1.05);
+    color: white;
+    background-color: #D1291D;
+    border-color: #D1291D;
+}
+
 
 
 @media only screen and (max-width : 768px){
@@ -290,10 +336,8 @@ button{
     }
 
     .topBar_options{
-        /* display: none; */
-        opacity: 0;
+        display: none;
         overflow: hidden;
-        display: flex;
         flex-direction: column;
         position: absolute;
         top: 25vw;
@@ -305,11 +349,12 @@ button{
         /* background-color: #762621; */
         background-color: white;
         /* border-radius: 30px; */
-        transition: all 0.5s ease-in-out
+        transition: all 0.5s ease-in-out;
+        z-index: 2;
     }
 
     .topBar_options.show{
-        opacity: 1;
+        display: flex;
     }
 
     .topBar_toggle{
@@ -352,7 +397,7 @@ button{
     }
     
     .speakers{
-        margin-top: 40vw;
+        margin-top: 30vw;
     }
 
     .speaker_image{
@@ -362,10 +407,31 @@ button{
         margin-bottom: 10vw;
     }
 
+    .speaker_image div{
+        text-align: center;
+        font-size: 5vw;
+        padding: 5vw;
+        margin-top: 60vw;
+        height: 100%;
+    }
+
+    .speaker_image:hover div{
+        transform: translateY(-60vw);
+    } 
+
+    .speaker_image div p{
+        font-size: 4vw;
+    }
+
+    .speaker_image div button{
+        font-size: 3vw;
+        margin-top: 3vw;
+    }
+
     .speakers button{
         font-size: 4vw;
         padding: 2vw 10vw 2vw 10vw;
-        margin-top: 10vw;
+        margin: 10vw auto 0vw auto;
     }
     
     .footer{
@@ -415,6 +481,9 @@ button{
         display: none;
     }
 
-
+    .contact button{
+        margin-top: 5vw;
+        margin-bottom: 10vw;
+    }
 
 }

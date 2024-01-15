@@ -4,27 +4,27 @@
 }
 @font-face {
     font-family: Helvetica;
-    src: url(asset/fonts/Helvetica-BoldOblique.ttf);
+    src: url(/asset/fonts/Helvetica-BoldOblique.ttf);
 }
 @font-face {
     font-family: Helvetica;
-    src: url(asset/fonts/Helvetica-Oblique.ttf);
+    src: url(/asset/fonts/Helvetica-Oblique.ttf);
 }
 @font-face {
     font-family: Helvetica;
-    src: url(asset/fonts/helvetica-compressed-5871d14b6903a.otf);
+    src: url(/asset/fonts/helvetica-compressed-5871d14b6903a.otf);
 }
 @font-face {
     font-family: Helvetica;
-    src: url(asset/fonts/helvetica-light-587ebe5a59211.ttf);
+    src: url(/asset/fonts/helvetica-light-587ebe5a59211.ttf);
 }
 @font-face {
     font-family: Helvetica;
-    src: url(asset/fonts/helvetica-rounded-bold-5871d05ead8de.otf);
+    src: url(/asset/fonts/helvetica-rounded-bold-5871d05ead8de.otf);
 }
 @font-face {
     font-family: Helvetica;
-    src: url(asset/fonts/Helvetica.ttf); 
+    src: url(/asset/fonts/Helvetica.ttf); 
     font-weight: 400;
 }
 
@@ -356,13 +356,15 @@ button{
 
 .content_row p , .content_row2 p{
     width: 18vw;
-    margin: 3vw 2vw 0vw 2vw;
+    margin: 3.5vw 2vw 0vw 2vw;
     font-size: 1.1vw;
 }
 
 .content_row2 p{
     margin-left: 0vw;
+    margin-top: 4vw;
 }
+
 
 .speakers{
     display: flex;
@@ -468,6 +470,13 @@ button{
     width: 2vw;
     border-radius: 10px;
     margin: 2vw 5vw 0vw 5vw;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.icon svg:hover{
+    background-color: rgba(255, 0, 0, 0.06);
+    transform: scale(1.1);
 }
 
 .icon p{
@@ -551,6 +560,11 @@ button:hover{
     color: black;
 }
 
+.contact button{
+    margin: 1.5vw 0vw 0vw 0vw;
+
+}
+
 .contact a{
     text-decoration: none;
     color: black;
@@ -585,6 +599,18 @@ button:hover{
     width: 83vw; 
 }
 
+iframe{
+    border: 1px solid #D1291D;
+    padding: 2vw;
+    width: 80vw;
+    height: 40vw;
+    margin: 5vw 0vw 10vw 0vw;
+    border-radius: 35px;
+    background-color: rgba(0, 0, 0, 0.234);
+    position: relative;
+    left: 7vw;
+}
+
 
 @media only screen and (max-width : 768px){
 
@@ -602,6 +628,7 @@ button:hover{
     .topBar{
         margin: 7vw 4vw 30vw 4vw;
         font-size: 4vw;
+        
     }
 
     .logo{
@@ -610,10 +637,9 @@ button:hover{
     }
 
     .topBar_options{
-        /* display: none; */
-        opacity: 0;
+        display: none;
+        /* opacity: 0; */
         overflow: hidden;
-        display: flex;
         flex-direction: column;
         position: absolute;
         top: 25vw;
@@ -625,11 +651,11 @@ button:hover{
         /* background-color: #762621; */
         background-color: white;
         /* border-radius: 30px; */
-        transition: all 0.5s ease-in-out
+        transition: all 0.5s ease-in-out;
     }
 
     .topBar_options.show{
-        opacity: 1;
+        display: flex;
     }
 
     .topBar_toggle{
@@ -917,6 +943,14 @@ button:hover{
         display: none;
     }
 
+    .contact button{
+        margin-top: 5vw;
+        margin-bottom: 10vw;
+    }
+
+    iframe{
+        height: 170vw;
+    }
 
 
 }
