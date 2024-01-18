@@ -39,7 +39,6 @@ head{
 
 body{
     background-color: #232723;
-    height: 5416px;
     margin: 0;
 }
 
@@ -196,12 +195,12 @@ button{
 
 .journey_contents{
     display: flex;
-    border: 2px solid #ffc13b;
     border-radius: 40px;
     padding: 5vw;
-    width: 70vw;
+    width: 71vw;
     margin: 5vw auto;
     flex-wrap: wrap;
+    box-shadow: 0px 0px 1vw #ffc13b44;
 }
 
 .journey_contents div{
@@ -212,6 +211,13 @@ button{
 .journey_contents div img{
     width: 12vw;
     height: 12vw;
+    border: 1px solid #ffc13b;
+    box-shadow: 0px 0px 20px black;
+    transition: all 0.5s ease;
+}
+
+.journey_contents div img:hover{
+    transform: scale(1.05);
 }
 
 .theme_details{
@@ -259,6 +265,7 @@ button{
 .points img{
     width: 20vw;
     height: 20vw;
+    box-shadow: 0px 0px 10vw #ffc13b38;
 }
 
 .points li{
@@ -284,6 +291,7 @@ b{
     font-size: 1vw;
     color: red;
     margin-bottom: 2vw;
+    margin-top: 15vw;
 }
 
 .TEDxPVGCOET{
@@ -355,6 +363,19 @@ b{
     width: 83vw; 
 }
 
+.contact button{
+    margin: 1.5vw 0vw 0vw 0vw;
+    color: red;
+    border-color: rgba(0, 0, 0, 0.23);
+}
+
+button:hover{
+    transform: scale(1.05);
+    color: red;
+    background-color: #ffc13b;
+    cursor: pointer;
+}
+
 @media only screen and (max-width : 768px){
 
     *{
@@ -380,10 +401,8 @@ b{
     }
 
     .topBar_options{
-        /* display: none; */
-        opacity: 0;
+        display: none;
         overflow: hidden;
-        display: flex;
         flex-direction: column;
         position: absolute;
         top: 25vw;
@@ -393,14 +412,19 @@ b{
         padding: 5vw 0vw 15vw 0vw;
         text-align: center;
         /* background-color: #762621; */
-        background-color: white;
+        background-color: #ffc13b;
         /* border-radius: 30px; */
         transition: all 0.5s ease-in-out;
-        z-index: -1;
+        z-index: 2;
+    }
+
+    .topBar button{
+        color: red;
+        border-color: white;
     }
 
     .topBar_options.show{
-        opacity: 1;
+        display: flex;
     }
 
     .topBar_toggle{
@@ -581,6 +605,10 @@ b{
         display: none;
     }
 
+    .contact button{
+        margin-top: 5vw;
+        margin-bottom: 10vw;
+    }
     
 
 }
