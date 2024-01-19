@@ -204,7 +204,7 @@ button {
     height: 10vw;
     width: 10.5vw;
     margin: 3vw auto 0vw auto;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease;
 }
 
 .name_bar {
@@ -215,7 +215,7 @@ button {
     height: 3vw;
     padding: 1vw;
     font-weight: 500;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.5s ease;
 }
 
 .name_bar p {
@@ -225,64 +225,45 @@ button {
     letter-spacing: 1px;
 }
 
+.photo_card:hover img{
+    transform: scale(0.8) translateY(-3vw);
+
+}
+
 
 /* DONT DELETE THE COMMENTED LINES ABOVE , IT WILL BE USED IF SOCIAL ACCOUNTS OF ALL MEMBERS IS TO BE DISPLAYED*/
 
-.social_accounts {
-    display: none;
-    border: 1px solid blue;
-    height: 3vw;
-    width: 8vw;
-    margin: 1vw auto 1vw auto;
+
+.social-links, .lead-links{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    width: 100%;
+    height: fit-content;
+    padding: 1vw 1vw 2vw 1vw;
+    margin-top: 0vw;
     transition: all 0.5s ease;
 }
 
-.social_accounts img {
-    width: 3vw;
-    height: 3vw;
-    margin: 0vw;
+.social-links img, .lead-links img{
+    width: 2vw;
+    height: 2vw;
+    margin: 0vw 1vw;
 }
 
-.photo_card:hover .name_bar {
-    transform: translateY(-3vw);
+.photo_card:hover .name_bar, .photo_card:hover .social-links, .photo_card:hover .lead-links{
+    transform: translateY(-4vw);
 }
 
-.photo_card .social-links a {
-    display: none;
-    /* Hide the social media icons by default */
+.photo_card:hover .social-links img, .photo_card:hover .lead-links img{
+    transform: scale(1);
 }
 
-.photo_card:hover .social-links a {
-    display: inline-block;
-    flex-direction: row;
-    color: white;
-    padding: 0 3.4vh 0 3.4vh;
-    transform: translateY(-4vh) scale(1.5);
-    /* Make the social media icons visible on hover */
+.lead-links{
+    padding: 2vw 1vw;
 }
 
-.photo_card .lead-links a {
-    display: none;
-    /* Hide the social media icons by default */
-}
 
-.photo_card:hover .lead-links a {
-    display: inline-block;
-    flex-direction: row;
-    color: white;
-    padding: 0 3vh 0 3vh;
-    transform: translateY(-3vh) scale(1.5);
-    /* Make the social media icons visible on hover */
-}
-
-.photo_card:hover .social_accounts {
-    display: flex;
-}
-
-.photo_card:hover img {
-    transform: scale(0.8);
-    transform: translateY(-2vw);
-}
 
 /**/
 
@@ -569,11 +550,6 @@ button:hover {
         margin: 18vw auto 0vw auto;
     }
 
-    .photo_card:hover img{
-        transform: translateY(-1vw);
-        transform: scaleX(3);
-    }
-
     .name_bar {
         height: 10vw;
         margin-top: 10vw;
@@ -583,6 +559,37 @@ button:hover {
     .name_bar p {
         font-size: 2.5vw;
         margin-top: 1vw;
+    }
+
+    .photo_card:hover img{
+        transform: scale(3);
+    }
+
+    .photo_card:hover .name_bar, .photo_card:hover .social-links{
+        transform: translateY(-55vw);
+    }
+
+    .photo_card:hover .lead-links{
+        transform: translateY(-49vw);
+    }
+
+    .social-links img, .lead-links img{
+        width: 10vw;
+        height: 10vw;
+        margin: 1vw 5vw;
+    }
+
+    .social-links, .lead-links{
+        justify-content: center;
+        padding: 10vw 0vw 10vw 0vw;
+    }
+
+    .social-links img, .lead-links img{
+        transform: scale(1);
+    }
+
+    .photo_card:hover .social-links img, .photo_card:hover .lead-links img{
+        transform: scale(1);
     }
 
     .Team_left {
