@@ -1,4 +1,15 @@
-var Home = document.getElementById("Home");
+function DropDown() {
+    const navbarLinks = document.querySelector('.dropMenu');
+    navbarLinks.classList.toggle('show');
+}
+
+function toggleNavbar() {
+    const navbarLinks = document.querySelector('.topBar_options');
+    navbarLinks.classList.toggle('show');
+}
+
+var Team = document.getElementById("Team");
+var events = document.getElementById("Events");
 var theme = document.getElementById('Theme');
 var punarutthan = document.getElementById("2024");
 var avantGrande = document.getElementById("2021");
@@ -8,9 +19,10 @@ var avantGarde2 = document.getElementById("avant");
 var takeLeap2 = document.getElementById("leap");
 
 
-Home.addEventListener('click', function (event) {
+
+Team.addEventListener('click', function (event) {
     event.preventDefault();
-    window.location.href = 'index.html'
+    window.location.href = 'team.html'
 });
 
 theme.addEventListener('click', function (event) {
@@ -48,12 +60,11 @@ takeLeap2.addEventListener('click', function (event) {
     window.location.href = '2020-events.html'
 });
 
-function toggleNavbar() {
-    const navbarLinks = document.querySelector('.topBar_options');
-    navbarLinks.classList.toggle('show');
-}
+Home.addEventListener('click' , function(event){
+    event.preventDefault();
+    window.location.href = 'index.html'
+});
 
-function DropDown() {
-    const navbarLinks = document.querySelector('.dropMenu');
-    navbarLinks.classList.toggle('show');
+function redirectTeam() {
+    window.location.href = 'team.html'
 }

@@ -5,14 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team | TEDxPVGCOET</title>
     <link rel="stylesheet" href="css/team.css">
-    <script src="js/team.js"></script>
+    <link rel="stylesheet" href="css/partials/topBar.css">
+    <link rel="stylesheet" href="css/partials/footer.css">
+    <link rel="stylesheet" href="css/partials/boilerplate.css">
 </head>
 <body>
     <div class="topBar">
         <img src="asset\images\TEDxPVGCOET Logo without bg.png" alt="" class="logo">
         <div class="topBar_options">
             <a href="" class="links" id="Home">Home</a>
-            <a href="" class="links" id="Events">Events</a>
+            <a href="javascipt:void(0)" class="links" id="Events" onclick="DropDown()">Events <img src="/asset/images/arrow-down-338-svgrepo-com.svg" alt="" id="dropdown">
+                <div class="dropMenu">  
+                    <ul>
+                        <li>
+                            <a href="" id="2024" >Punarutthan - 2024</a>
+                        </li>
+                        <li>
+                            <a href="" id="2021" >Avant Garde - 2021</a>
+                        </li>
+                        <li>
+                            <a href="" id="2020" >Take the leap - 2020</a>
+                        </li>
+                    </ul>
+                </div>
+            </a>
+            <a href="" class="links hide" id="punarutthan">Punarutthan - 2024</a>
+            <a href="" class="links hide" id="avant">Avant Garde - 2021</a>
+            <a href="" class="links hide" id="leap">Take the leap - 2020</a>
             <a href="" class="links" id="Team">Team</a>
             <a href="" class="links" id="Theme">Theme</a>
             <button>Register</button>
@@ -33,7 +52,7 @@
     <div class="heads">
         <div class="head_layout">
             <p>Co-organizer</p>
-            <div class="line"></div>
+            <div class="line2"></div>
             <div class="photo_card">
                 <img src="asset/images/Grayscale Team members/Co-organizer_Vaishnavi_Habbu.png" alt="Vaishnavi Habbu">
                 <div class="name_bar">
@@ -54,7 +73,7 @@
         </div>
         <div class="head_layout">
             <p>Licencee & Organizer</p>
-            <div class="line"></div>
+            <div class="line2"></div>
             <div class="photo_card">
                 <img src="asset/images/Grayscale Team members/Licencee_Nisarg_Kudgunti.png" alt="Nisarg Kudgunti" class="width_fix">
                 <div class="name_bar">
@@ -75,7 +94,7 @@
         </div>
         <div class="head_layout">
             <p>Treasurer</p>
-            <div class="line"></div>
+            <div class="line2"></div>
             <div class="photo_card">
                 <img src="asset/images/Grayscale Team members/Treasurer_Atharva_Ostwal.png" alt="Atharva Ostwal">
                 <div class="name_bar">
@@ -98,7 +117,7 @@
 
     <div class="heading">
         <h2>Team Design and Production</h2>
-        <div class="line"></div>
+        <div class="line2"></div>
     </div>
 
     <div class="Team_left Dnp">
@@ -285,7 +304,7 @@
 
     <div class="heading">
         <h2>Team Logistics and Operation</h2>
-        <div class="line"></div>
+        <div class="line2"></div>
     </div>
 
     <div class="Team_left LnO">
@@ -526,7 +545,7 @@
 
     <div class="heading">
         <h2>Team Media and Communication</h2>
-        <div class="line"></div>
+        <div class="line2"></div>
     </div>
 
     <div class="Team_left MnC">
@@ -728,7 +747,7 @@
 
     <div class="heading">
         <h2>Team Finance and Sponsership</h2>
-        <div class="line"></div>
+        <div class="line2"></div>
     </div>
 
     <div class="Team_left Fns">
@@ -896,7 +915,7 @@
 
     <div class="heading">
         <h2>Team Editorial</h2>
-        <div class="line"></div>
+        <div class="line2"></div>
     </div>
 
     <div class="Team_left Ed">
@@ -1062,7 +1081,7 @@
 
     <div class="heading">
         <h2>Team Curation</h2>
-        <div class="line"></div>
+        <div class="line2"></div>
     </div>
 
     <div class="Team_left Cu">
@@ -1364,28 +1383,7 @@
         
     </footer>
 
-    <script>
-        var Home = document.getElementById("Home");
-        var events = document.getElementById("Events");
-        var theme = document.getElementById('Theme');
-
-
-        Home.addEventListener('click' , function(event){
-            event.preventDefault();
-            window.location.href = 'index.html'
-        });
-
-        events.addEventListener('click' , function(event){
-            event.preventDefault();
-            window.location.href = 'events.html'
-        });
-
-        theme.addEventListener('click' , function(event){
-            event.preventDefault();
-            window.location.href = 'theme.html'
-        });
-
-    </script>
+    <script src="/js/team.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>

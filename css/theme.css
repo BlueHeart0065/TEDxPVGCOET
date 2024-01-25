@@ -1,60 +1,7 @@
-@font-face {
-    font-family: Helvetica;
-    src: url(asset/fonts/Helvetica-Bold.ttf);
-}
-@font-face {
-    font-family: Helvetica;
-    src: url(asset/fonts/Helvetica-BoldOblique.ttf);
-}
-@font-face {
-    font-family: Helvetica;
-    src: url(asset/fonts/Helvetica-Oblique.ttf);
-}
-@font-face {
-    font-family: Helvetica;
-    src: url(asset/fonts/helvetica-compressed-5871d14b6903a.otf);
-}
-@font-face {
-    font-family: Helvetica;
-    src: url(asset/fonts/helvetica-light-587ebe5a59211.ttf);
-}
-@font-face {
-    font-family: Helvetica;
-    src: url(asset/fonts/helvetica-rounded-bold-5871d05ead8de.otf);
-}
-@font-face {
-    font-family: Helvetica;
-    src: url(asset/fonts/Helvetica.ttf); 
-    font-weight: 400;
-}
-@font-face {
-    font-family: Samarkan;
-    src: url(asset/fonts/SAMARN__.TTF); 
-}
-
-
-head{
-    display: none;
-} 
-
 body{
     background-color: #232723;
     margin: 0;
 }
-
-
-button{
-    background-color: transparent;
-    color: white;
-    padding: 0.5vw 2vw 0.5vw 2vw;
-    border-radius: 25px;
-    border: 2px solid #FFD23B;
-    margin-left: 2vw;
-    font-size: 1vw;
-    transition: all 0.3s ease;
-}
-
-
 
 .topBar{
     /* border: 1px solid white; */
@@ -124,6 +71,49 @@ button{
     border: 2px solid #ffd13ba8;
     margin-left: 2vw;
     font-size: 1vw;
+}
+
+.topBar_options a img{
+    width: 0.8vw;
+    height: 0.8vw;
+    position: relative;
+    top: 0.1vw;
+    left: 0.2vw;
+}
+
+.dropMenu{
+    display: none;
+    background-color: #d1291d67;
+    height: fit-content;
+    width: 19vw;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.dropMenu ul{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    margin-bottom: 2vw;
+}
+
+.dropMenu ul li{
+    list-style-type:square;
+    color: white;
+    padding: 0.5vw;
+    margin-left: 1vw;
+}
+
+.dropMenu a{
+    margin: 0vw 0vw 1vw 0vw;
+}
+
+.dropMenu.show{
+    display: flex;
+}
+
+.hide{
+    display: none;
 }
 
 .hero{
@@ -451,6 +441,18 @@ button:hover{
         font-size: 4vw;
         margin: 10vw auto 0vw auto;   
         padding: 2vw 6vw 2vw 6vw;
+    }
+
+    #Events{
+        display: none;
+    }
+
+    .dropMenu{
+        display: none;
+    }
+
+    .hide{
+        display: flex;
     }
 
     .hero{
