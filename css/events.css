@@ -97,6 +97,10 @@ button{
     font-size: 0.8vw;
 }
 
+.speakers a{
+    margin: auto;
+}
+
 .speakers button{
     background-color: transparent;
     color: #D1291D;
