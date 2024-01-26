@@ -1,6 +1,6 @@
 body{
     background-color: #181818;
-    background-image: url(../asset/images/Illustration.png);
+    background-image: url(/asset/images/Illustration.png);
     background-size: 100vw;
     /* height: 5124px; */
     margin: 0;
@@ -480,7 +480,9 @@ iframe{
         margin-top: 40vw;
     }
 
-
+    .Big_X{
+        display: none;
+    }
 
     .goals_content{
         width: 87vw;

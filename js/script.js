@@ -124,3 +124,12 @@ function redirectTeam() {
 }
 
 
+document.addEventListener("DOMContentLoaded", function() {
+    var visitMeElement = document.getElementById("tickets");
+
+    if (visitMeElement) {
+        visitMeElement.scrollIntoView({ behavior: 'smooth' });
+    }
+});
+
+

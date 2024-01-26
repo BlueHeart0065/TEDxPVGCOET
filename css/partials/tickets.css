@@ -15,7 +15,7 @@
 .side-panel {
     width: 25vw;
     height: 35vw;
-    background-image: url(./asset/images/banner.png);
+    background-image: url(../asset/images/banner.png);
     background-size: cover;
 }
 
@@ -46,7 +46,7 @@
     background-color: rgba(255, 0, 0, 0.812);
     font-size: 1.5vw;
     color: white;
-    padding: 1.3vw 2vw;
+    padding: 1.3vw 1.7vw;
     text-align: center;
     border-radius: 100px;
     margin: -1vw 0vw 0vw 10vw;
@@ -112,7 +112,7 @@ a {
 
 
 h1 {
-    margin-bottom: 60px;
+    margin-bottom: 3.125vw;
     text-align: center;
     font: 300 1vw 'Helvetica';
     text-transform: uppercase;
@@ -124,7 +124,7 @@ h1 {
 }
 
 h2 {
-    margin-bottom: 80px;
+    margin-bottom: 4.167vw;
     text-align: center;
     font: 300 1vw 'Helvetica';
     text-transform: uppercase;
@@ -159,11 +159,11 @@ h2 {
     .figure {
         position: relative;
         float: left;
-        height: 110px;
-        width: 100px;
-        margin-right: 10px;
+        height: 6vw;
+        width: 6.5vw;
+        margin-right: 1vw;
         background-color: #fff;
-        border-radius: 8px;
+        border-radius: 1vw;
         @include box-shadow(0 3px 4px 0 rgba(0, 0, 0, .2), inset 2px 4px 0 0 rgba(255, 255, 255, .08));
 
         &:last-child {
@@ -175,7 +175,7 @@ h2 {
             left: 0;
             right: 0;
             margin: auto;
-            font: normal 5.94em/107px 'Helvetica';
+            font: normal 5vw 'Helvetica';
             font-weight: 700;
             color: #de4848;
         }
@@ -265,10 +265,10 @@ h2 {
 .get-ticket{
     font-size: 1vw;
     background-color: rgba(255, 0, 0, 0.812);
-    margin: 0vw 0vw 0vw 7.5vw;
+    margin: 0vw 0vw 0vw 7vw;
     border-radius: 10px;
     color: white;
-    padding: 1vw 13vw;
+    padding: 1vw 14vw;
     cursor: pointer;
     border: none;
 }
@@ -294,7 +294,7 @@ h2 {
     }
 
     .main-1{
-
+        
     }
 
     .date h2{
@@ -308,7 +308,7 @@ h2 {
     .circle{
         margin-top: 1vw;
         font-size: 5vw;
-        padding: 4vw 5vw;
+        padding: 4vw 6vw;
         margin-left: 6vw;
         
     }
@@ -335,40 +335,36 @@ h2 {
     }
 
     .time{
-        transform: scale(0.7);
-        margin-left: 10vw;
+        transform: scale(1);
+        margin-left: 0vw;
         margin-top: 0vw;
     }
 
     .countdown{
-        
-        border: 1px solid greenyellow;
-
+    
         .count-title{
-            font-size: 5vw;
+            font-size: 4vw;
             margin-bottom: 2vw;
             margin-top: 5vw;
         }
 
         .figure{
-            width: 15vw;
-            height: 25vw;
+            width: 10vw;
+            height: 12vw;
             margin-right: 1vw;
 
 
             >span {
-                font-size: 10vw;
+                font-size: 9vw;
             }
+
         }
-        
     }
 
     .get-ticket{
         font-size: 5vw;
         padding: 5vw 10vw;
-        margin: 0vw 0vw 10vw 17vw;
+        margin: 5vw 0vw 10vw 17vw;
     }
-    
-
     
 }
