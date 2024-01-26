@@ -30,7 +30,7 @@ var Countdown = {
         --that.total_seconds;
 
         // Calculate hours, minutes, and seconds
-        var hours = Math.floor(that.total_seconds / 3600);
+        var hours = Math.floor((that.total_seconds / 3600)*0.0416667);
         var minutes = Math.floor((that.total_seconds % 3600) / 60);
         var seconds = that.total_seconds % 60;
 
