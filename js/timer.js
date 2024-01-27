@@ -75,6 +75,27 @@ var Countdown = {
       ease: Quart.easeOut,
       clearProps: 'all'
     });
+  },
+
+  checkHour: function(value, $el_1, $el_2) {  
+      
+    var val_1       = value.toString().charAt(0),
+        val_2       = value.toString().charAt(1),
+        fig_1_value = $el_1.querySelector('.top').innerHTML,
+        fig_2_value = $el_2.querySelector('.top').innerHTML;
+
+    if(value >= 10) {
+
+      // Animate only if the figure has changed
+      if(fig_1_value !== val_1) this.animateFigure($el_1, val_1);
+      if(fig_2_value !== val_2) this.animateFigure($el_2, val_2);
+    }
+    else {
+
+      // If we are under 10, replace the first figure with 0
+      if(fig_1_value !== '0') this.animateFigure($el_1, 0);
+      if(fig_2_value !== val_1) this.animateFigure($el_2, val_1);
+    }    
   }
 };
 

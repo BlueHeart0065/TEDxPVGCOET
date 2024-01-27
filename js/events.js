@@ -60,3 +60,7 @@ Home.addEventListener('click', function (event) {
     event.preventDefault();
     window.location.href = 'index.html'
 });
+
+function redirectToForm() {
+    window.location.href = "https://forms.gle/MmJ8HA86x1gk5YMXA";
+}

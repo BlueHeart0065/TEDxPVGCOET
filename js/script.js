@@ -132,4 +132,8 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
+function redirectToForm() {
+    window.location.href = "https://forms.gle/MmJ8HA86x1gk5YMXA";
+}
+
 
