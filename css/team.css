@@ -34,7 +34,8 @@ body{
 
 .hero button {
     width: fit-content;
-    color: white;
+    background-color: white;
+    color: red;
     /* font-weight: 700; */
     margin: 4vw auto 0vw auto;
 }
@@ -107,6 +108,18 @@ body{
 .photo_card:hover img{
     transform: scale(0.8) translateY(-3vw);
 
+}
+
+.exception{
+    margin-left: 4vw;
+}
+
+.exception2{
+    margin-left: 22.5vw;
+}
+
+.exception3{
+    margin-left: 30vw;
 }
 
 
@@ -354,6 +367,10 @@ body{
         font-weight: 200;
         text-align: center;
         margin: 10vw auto 0vw auto;
+    }
+
+    .exception4{
+        margin-left: 22vw;
     }
 
 }
