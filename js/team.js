@@ -75,5 +75,11 @@ function scrollToTop() {
     }
   };
 
+  function scrollToTeam() {
+    // Get the target element
+    var targetElement = document.getElementById('heads');
 
+    // Scroll to the target element
+    targetElement.scrollIntoView({ behavior: 'smooth' });
+}
   

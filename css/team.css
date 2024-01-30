@@ -40,6 +40,11 @@ body{
     margin: 4vw auto 0vw auto;
 }
 
+.hero button:hover{
+    background-color: white;
+    color: red;
+}
+
 .heads {
     display: flex;
     height: fit-content;
@@ -121,6 +126,8 @@ body{
 .exception3{
     margin-left: 30vw;
 }
+
+
 
 
 /* DONT DELETE THE COMMENTED LINES ABOVE , IT WILL BE USED IF SOCIAL ACCOUNTS OF ALL MEMBERS IS TO BE DISPLAYED*/
@@ -209,6 +216,10 @@ body{
 
 #cu_image {
     margin-right: 16.5vw;
+}
+
+.exception .exception5{
+    margin-left: -5vw;
 }
 
 @media only screen and (max-width : 768px) {
@@ -371,6 +382,10 @@ body{
 
     .exception4{
         margin-left: 22vw;
+    }
+
+    .exception .exception5{
+        margin-left: 2vw;
     }
 
 }

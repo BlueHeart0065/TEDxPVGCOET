@@ -86,3 +86,8 @@ function scrollToTop() {
       scrollToTopBtn.style.display = 'none';
     }
   };
+
+  function scrollToSection(ele) {
+    var targetElement = document.getElementById(`${ele}`);
+    targetElement.scrollIntoView({ behavior: 'smooth' });
+}
