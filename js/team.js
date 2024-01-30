@@ -57,3 +57,23 @@ function DropDown() {
     const navbarLinks = document.querySelector('.dropMenu');
     navbarLinks.classList.toggle('show');
 }
+
+function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+
+  // Show/hide the button based on scroll position
+  window.onscroll = function() {
+    var scrollToTopBtn = document.getElementById('scroll-to-top');
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      scrollToTopBtn.style.display = 'flex';
+    } else {
+      scrollToTopBtn.style.display = 'none';
+    }
+  };
+
+
+  

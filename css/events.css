@@ -32,7 +32,6 @@ button{
 }
 
 
-
 #The_Speakers{
     font-size: 2vw;
     font-weight: 900;
@@ -79,7 +78,7 @@ button{
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    background-color: #d1291d8b;
+    background-color: #D6291B;
     height: 100%;
     padding: 1.5vw 2vw;
     color: white;
@@ -97,12 +96,12 @@ button{
 
 .speaker_image div p{
     font-size: 1vw;
+    margin-top: 2vw;
 }
 
-.speaker_image div button{
-    color: white;
-    margin: 0.5vw 0vw 0vw 0vw;
-    font-size: 0.8vw;
+.speaker_image div a button{
+    margin: 6vw 0vw 0vw 0vw;
+    font-size: 1vw;
 }
 
 .speakers a{
@@ -177,6 +176,7 @@ button{
 
     .speaker_image div p{
         font-size: 4vw;
+        margin-top: 5vw;
     }
 
     .speaker_image div button{
@@ -194,5 +194,9 @@ button{
         font-size: 4vw;
         padding: 2vw 10vw 2vw 10vw;
         margin: 10vw auto 0vw auto;
+    }
+
+    .speaker_image div a button{
+        font-size: 4vw;
     }
 }

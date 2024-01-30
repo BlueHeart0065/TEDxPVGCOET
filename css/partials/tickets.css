@@ -1,12 +1,9 @@
-
-
 .tickets {
     background-color: rgb(202, 202, 202);
     display: flex;
     flex-wrap: wrap;
     width: fit-content;
-    margin: auto;
-    margin-bottom: 20vw;
+    margin: 10vw auto 20vw auto;
     font-family: 'Helvetica';
     border-radius: 20px;
     overflow: hidden;
@@ -40,6 +37,8 @@
 .date h2 {
     font-size: 3vw;
     margin: 0vw;
+    text-align: left;
+
 }
 
 .circle {
@@ -281,6 +280,7 @@ h2 {
     .tickets{
         width: 85vw;
         height: fit-content;
+        margin-top: 25vw;
     }
 
     .side-panel{
@@ -360,8 +360,6 @@ h2 {
             >span {
                 font-size: 12vw;
             }
-
-            
 
         }
     }

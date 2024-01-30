@@ -64,3 +64,26 @@ Home.addEventListener('click', function (event) {
 function redirectToForm() {
     window.location.href = "https://forms.gle/MmJ8HA86x1gk5YMXA";
 }
+
+function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+
+  // Show/hide the button based on scroll position
+  window.onscroll = function() {
+    var scrollToTopBtn = document.getElementById('scroll-to-top');
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      scrollToTopBtn.style.display = 'flex';
+    } else {
+      scrollToTopBtn.style.display = 'none';
+    }
+  };
+
+
+function toggleNavbar() {
+    const navbarLinks = document.querySelector('.topBar_options');
+    navbarLinks.classList.toggle('show');
+}

@@ -14,7 +14,7 @@ body{
     height: 30vw;
     width: 80vw;
     border-radius: 30px;
-    margin: 5vw auto 0vw auto;
+    margin: 10vw auto 0vw auto;
 }
 
 .hero h1 {
@@ -205,7 +205,7 @@ body{
         /* display: none; */
         height: 80vw;
         width: 90vw;
-        margin: 0vw auto 10vw auto;
+        margin: 30vw auto 10vw auto;
     }
 
     .hero h1 {
@@ -238,7 +238,6 @@ body{
         margin-bottom: 5vw;
         text-align: center;
         /* border: 1px solid burlywood; */
-
     }
 
     .line2{

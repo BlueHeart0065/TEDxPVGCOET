@@ -60,8 +60,27 @@ script{
     display: none;
 }
 
+.scroll-to-top{
+    position: fixed;
+    bottom: 2vw;
+    right: 2vw;
+    width: 1vw;
+    height: 1vw;
+    border-radius: 100px;
+    cursor: pointer;
+    background-color: #D1291D;
+    padding: 1vw;
+    transition: all 0.5s ease;
+}
+
+.scroll-to-top:hover{
+    background-color: #ff4335;
+}
+
 
 @media only screen and (max-width : 768px){
+
+
     *{
         -webkit-tap-highlight-color: transparent;
     }
@@ -70,5 +89,19 @@ script{
         font-size: 4vw;
         width: fit-content;
         padding: 2vw 6vw 2vw 6vw;
+    }
+
+    .scroll-to-top{
+        position: fixed;
+        bottom: 2vw;
+        right: 2vw;
+        width: 5vw;
+        height: 5vw;
+        border-radius: 100px;
+        cursor: pointer;
+        background-color: #D1291D;
+        padding: 5vw;
+        transition: all 0.5s ease;
+        opacity: 0.5;
     }
 }

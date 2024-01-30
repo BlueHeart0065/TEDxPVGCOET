@@ -29,7 +29,7 @@ button{
     /* border: 1px solid blue; */
     height: fit-content;
     width: fit-content;
-    margin: 8vw 0vw 0vw 12.5vw;
+    margin: 12.5vw 0vw 0vw 12.5vw;
     font-weight: 700;
     line-height: 0vw;
 }
@@ -82,7 +82,6 @@ button{
     top: 16vw;
     right: 18vw;
     transition: all 0.5s ease;
-
 }
 
 .illustration2{
@@ -362,6 +361,7 @@ iframe{
         font-size: 10vw;
         margin: 0vw auto 0vw auto;
         text-align: center;
+        margin-top: 35vw;
     }
 
     .hero_list{
