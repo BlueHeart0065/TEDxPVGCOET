@@ -1,44 +1,15 @@
 @font-face {
-    font-family: Helvetica;
-    src: url(../../asset/fonts/Helvetica-Bold.ttf);
-}
-@font-face {
-    font-family: Helvetica;
-    src: url(../../asset/fonts/Helvetica-BoldOblique.ttf);
-}
-@font-face {
-    font-family: Helvetica;
-    src: url(../../asset/fonts/Helvetica-Oblique.ttf);
-}
-@font-face {
-    font-family: Helvetica;
-    src: url(../../asset/fonts/helvetica-compressed-5871d14b6903a.otf);
-}
-@font-face {
-    font-family: Helvetica;
-    src: url(../../asset/fonts/helvetica-light-587ebe5a59211.ttf);
-}
-@font-face {
-    font-family: Helvetica;
-    src: url(../../asset/fonts/helvetica-rounded-bold-5871d05ead8de.otf);
-}
-@font-face {
-    font-family: Helvetica;
-    src: url(../../asset/fonts/Helvetica.ttf); 
-    font-weight: 400;
-}
-@font-face {
     font-family: Samarkan;
-    src: url(../../asset/fonts/SAMARN__.TTF); 
+    src: url(../../asset/fonts/SAMARN__.TTF);
 }
 
 
-head{
+head {
     display: none;
-} 
+}
 
 
-button{
+button {
     background-color: transparent;
     color: black;
     padding: 0.5vw 2vw 0.5vw 2vw;
@@ -49,18 +20,18 @@ button{
     transition: all 0.3s ease;
 }
 
-button:hover{
+button:hover {
     transform: scale(1.05);
     color: white;
     background-color: #D1291D;
     border-color: #D1291D;
 }
 
-script{
+script {
     display: none;
 }
 
-.scroll-to-top{
+.scroll-to-top {
     position: fixed;
     bottom: 2vw;
     right: 2vw;
@@ -73,25 +44,25 @@ script{
     transition: all 0.5s ease;
 }
 
-.scroll-to-top:hover{
+.scroll-to-top:hover {
     background-color: #ff4335;
 }
 
 
-@media only screen and (max-width : 768px){
+@media only screen and (max-width : 768px) {
 
 
-    *{
+    * {
         -webkit-tap-highlight-color: transparent;
     }
 
-    button{
+    button {
         font-size: 4vw;
         width: fit-content;
         padding: 2vw 6vw 2vw 6vw;
     }
 
-    .scroll-to-top{
+    .scroll-to-top {
         position: fixed;
         bottom: 2vw;
         right: 2vw;

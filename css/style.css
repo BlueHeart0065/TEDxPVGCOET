@@ -1,4 +1,4 @@
-body{
+body {
     background-color: #181818;
     background-image: url(../asset/images/Illustration.png);
     background-size: 100vw;
@@ -6,7 +6,7 @@ body{
     margin: 0;
 }
 
-button{
+button {
     background-color: transparent;
     color: #D1291D;
     padding: 0.5vw 2vw 0.5vw 2vw;
@@ -17,12 +17,12 @@ button{
     transition: all 0.3s ease;
 }
 
-.hero{
+.hero {
     margin-bottom: 10vw;
 }
 
-.display_text{
-    font-family: 'Helvetica';
+.display_text {
+    font-family: Helvetica;
     font-size: 3vw;
     color: white;
     letter-spacing: 2px;
@@ -34,7 +34,7 @@ button{
     line-height: 0vw;
 }
 
-.hero_list{
+.hero_list {
     display: flex;
     flex-direction: column;
     /* border: 1px solid white; */
@@ -42,16 +42,16 @@ button{
     height: fit-content;
     margin: 1vw 0vw 0vw 12.5vw;
     font-size: 1vw;
-    font-family: 'Helvetica';
+    font-family: Helvetica;
     color: white;
 }
 
-.list_row{
+.list_row {
     display: flex;
     flex-direction: column;
 }
 
-.list_column{
+.list_column {
     display: flex;
     flex-direction: row;
     /* border: 1px solid gray; */
@@ -62,20 +62,20 @@ button{
     cursor: default;
 }
 
-.list_column:hover{
+.list_column:hover {
     margin-bottom: 1vw;
 }
 
-.box{
+.box {
     height: 2vw;
     width: 2vw;
     padding: 1vw;
-    background : linear-gradient(to bottom , #232323 , #151515);
+    background: linear-gradient(to bottom, #232323, #151515);
     border-radius: 10px;
     margin-right: 2vw;
 }
 
-.illustration1{
+.illustration1 {
     width: 20vw;
     height: 17vw;
     position: absolute;
@@ -84,7 +84,7 @@ button{
     transition: all 0.5s ease;
 }
 
-.illustration2{
+.illustration2 {
     width: 10vw;
     height: 4vw;
     position: absolute;
@@ -92,8 +92,8 @@ button{
     left: 31vw;
 }
 
-.X{
-    font-family: 'Helvetica'; 
+.X {
+    font-family: Helvetica;
     font-size: 1vw;
     color: #A5251B;
     position: absolute;
@@ -101,7 +101,7 @@ button{
     right: 16vw;
 }
 
-.licencee{
+.licencee {
     position: absolute;
     top: 17vw;
     right: 21vw;
@@ -110,16 +110,17 @@ button{
     transition: all 0.3s ease;
 }
 
-.licencee:hover , .illustration1:hover{
+.licencee:hover,
+.illustration1:hover {
     transform: translate(1vw, -1vw);
 }
 
-.name_plate{
+.name_plate {
     background-color: #232323;
     border-radius: 30px;
     height: fit-content;
     width: fit-content;
-    font-family: 'Helvetica';
+    font-family: Helvetica;
     /* border: 1px solid red; */
     padding: 0.5vw 5vw 0.5vw 5vw;
     color: white;
@@ -128,15 +129,15 @@ button{
     right: 18.5vw;
 }
 
-#name1{
+#name1 {
     font-size: 1.5vw;
 }
 
-#position{
+#position {
     font-size: 1vw;
 }
 
-.about_us{
+.about_us {
     /* border: 1px solid white; */
     display: flex;
     flex-direction: row;
@@ -146,41 +147,42 @@ button{
     transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
-.about_us.show{
+.about_us.show {
     opacity: 1;
     transform: translateY(0);
 }
 
-.about_us_images{
+.about_us_images {
     margin-left: 15vw;
 }
 
-.about_us_images img{
+.about_us_images img {
     width: 20vw;
     height: 20vw;
 }
 
-.about_us_content{
-    font-family: 'Helvetica';
+.about_us_content {
+    font-family: Helvetica;
     font-size: 1vw;
     /* border: 1px solid wheat; */
     margin: 0vw 20vw 0vw 15vw;
     text-align: right;
 }
 
-#About , #us{
+#About,
+#us {
     font-size: 1.8vw;
 }
 
-#us{
+#us {
     font-size: 1.9vw;
 }
 
-#About_us_desc{
+#About_us_desc {
     font-size: 1.2vw;
 }
 
-.about_us_content button{
+.about_us_content button {
     background-color: transparent;
     color: #D1291D;
     padding: 0.5vw 2vw 0.5vw 2vw;
@@ -191,7 +193,7 @@ button{
     font-size: 1vw;
 }
 
-.Big_X{
+.Big_X {
     position: absolute;
     top: 100vw;
     right: 0vw;
@@ -200,8 +202,8 @@ button{
     opacity: 0.7;
 }
 
-.goals{
-    font-family: 'Helvetica';
+.goals {
+    font-family: Helvetica;
     display: flex;
     flex-direction: column;
     margin-bottom: 20vw;
@@ -210,18 +212,18 @@ button{
     transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
-.goals.show{
+.goals.show {
     opacity: 1;
     transform: translateY(0);
 }
 
-#Our_goals{
+#Our_goals {
     text-align: center;
     color: white;
     font-size: 1.5vw;
 }
 
-.goals_content{
+.goals_content {
     display: flex;
     flex-direction: row;
     /* border: 1px solid blue; */
@@ -231,40 +233,42 @@ button{
     flex-wrap: wrap;
 }
 
-.goals_content img{
+.goals_content img {
     height: 30vw;
     margin: 5vw 0vw 0vw 0vw;
     border-bottom: 1px solid white;
 }
 
-.content_row , .content_row2{
+.content_row,
+.content_row2 {
     display: flex;
     flex-direction: column;
     margin: 0vw 0vw 0vw 2vw;
     /* border: 1px solid red; */
 }
 
-.content_row{
+.content_row {
     margin: 0vw;
 }
 
-.content_row p , .content_row2 p{
+.content_row p,
+.content_row2 p {
     width: 18vw;
     margin: 3.5vw 2vw 0vw 2vw;
     font-size: 1.1vw;
 }
 
-.content_row2 p{
+.content_row2 p {
     margin-left: 0vw;
     margin-top: 4vw;
 }
 
 
-.team{
+.team {
     display: flex;
     flex-direction: column;
     margin: auto;
-    font-family: 'Helvetica';
+    font-family: Helvetica;
     font-size: 1vw;
     color: white;
     /* border-bottom: 1px solid red; */
@@ -273,17 +277,17 @@ button{
     transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
-.team.show{
+.team.show {
     opacity: 1;
     transform: translateY(0);
 }
 
-#Meet_The_team{
+#Meet_The_team {
     font-size: 1.5vw;
 }
 
 
-.team_logo{
+.team_logo {
     display: flex;
     flex-wrap: wrap;
     height: 30vw;
@@ -293,13 +297,13 @@ button{
     margin-top: 3vw;
 }
 
-.icon{
+.icon {
     width: fit-content;
     height: fit-content;
     /* border: 1px solid white; */
 }
 
-.icon svg{
+.icon svg {
     margin: auto;
     border: 1px solid white;
     padding: 1.5vw;
@@ -311,17 +315,17 @@ button{
     transition: all 0.3s ease;
 }
 
-.icon svg:hover{
+.icon svg:hover {
     background-color: rgba(255, 0, 0, 0.06);
     transform: scale(1.1);
 }
 
-.icon p{
+.icon p {
     margin: 1vw auto 0vw auto;
     text-align: center;
 }
 
-.team button{
+.team button {
     background-color: transparent;
     color: #D1291D;
     padding: 0.5vw 2vw 0.5vw 2vw;
@@ -335,14 +339,14 @@ button{
     margin-bottom: 3vw;
 }
 
-.team img{
+.team img {
     height: 10vw;
     width: 40vw;
     margin: auto;
     opacity: 0.8;
 }
 
-iframe{
+iframe {
     border: 1px solid #D1291D;
     padding: 2vw;
     width: 80vw;
@@ -355,24 +359,24 @@ iframe{
 }
 
 
-@media only screen and (max-width : 768px){
+@media only screen and (max-width : 768px) {
 
-    .display_text{
+    .display_text {
         font-size: 10vw;
         margin: 0vw auto 0vw auto;
         text-align: center;
         margin-top: 35vw;
     }
 
-    .hero_list{
-        margin:auto;
+    .hero_list {
+        margin: auto;
     }
 
-    .list_row{
+    .list_row {
         flex-direction: column;
     }
 
-    .list_column{
+    .list_column {
         /* border: 1px solid greenyellow; */
         font-size: 3vw;
         flex-direction: column;
@@ -380,7 +384,7 @@ iframe{
         margin-bottom: 5vw;
     }
 
-    .box{
+    .box {
         height: 7vw;
         width: 7vw;
         padding: 5vw;
@@ -388,24 +392,24 @@ iframe{
         background: white;
     }
 
-    .illustration1{
+    .illustration1 {
         width: 60vw;
         height: 50vw;
-        position:relative;
+        position: relative;
         display: flex;
         margin: 30vw 0vw 0vw 37vw;
     }
 
-    #ill1_2{
+    #ill1_2 {
         /* display: none; */
         margin: -52vw 0vw 0vw 38vw;
     }
 
-    #ill1_3{
+    #ill1_3 {
         margin: -53vw 0vw 0vw 39vw;
     }
 
-    .X{
+    .X {
         position: relative;
         left: 0vw;
         right: 0vw;
@@ -413,8 +417,8 @@ iframe{
         text-align: center;
     }
 
-    
-    .licencee{
+
+    .licencee {
         top: 0;
         right: 0;
         bottom: 0;
@@ -426,7 +430,7 @@ iframe{
         left: 28vw;
     }
 
-    .name_plate{
+    .name_plate {
         position: relative;
         font-size: 4vw;
         top: -40vw;
@@ -437,63 +441,65 @@ iframe{
         text-align: center;
     }
 
-    #name1{
+    #name1 {
         font-size: 5vw;
     }
 
-    #position{
+    #position {
         font-size: 3vw;
     }
 
-    .illustration2{
+    .illustration2 {
         display: none;
     }
 
-    .about_us{
+    .about_us {
         flex-direction: column;
     }
 
-    .about_us_images img{
+    .about_us_images img {
         display: none;
     }
 
-    .about_us_content{
+    .about_us_content {
         text-align: center;
         margin: auto;
     }
 
-    #About , #us{
+    #About,
+    #us {
         font-size: 6vw;
     }
 
-    #About_us_desc{
+    #About_us_desc {
         font-size: 5vw;
         width: 70vw;
     }
 
-    .about_us_content button{
+    .about_us_content button {
         font-size: 4vw;
         padding: 2vw 10vw 2vw 10vw;
     }
 
-    .goals{
+    .goals {
         margin-top: 40vw;
     }
 
-    .Big_X{
+    .Big_X {
         display: none;
     }
 
-    .goals_content{
+    .goals_content {
         width: 87vw;
         /* border: 1px solid blue; */
     }
 
-    .goals_content img{
+    .goals_content img {
         display: none;
     }
 
-    .content_row p, .content_row2 p{
+    .content_row p,
+    .content_row2 p {
         width: 30vw;
         text-align: center;
         border: 1px solid #D1291D;
@@ -504,46 +510,46 @@ iframe{
         font-size: 4.4vw;
     }
 
-    .team{
+    .team {
         /* display: none; */
         font-size: 4vw;
         margin-top: 40vw;
     }
 
-    .team_logo{
+    .team_logo {
         /* border: 1px solid blue; */
         width: 58vw;
         height: fit-content;
         margin-top: 20vw;
     }
 
-    .icon svg{
+    .icon svg {
         height: 10vw;
         width: 10vw;
         padding: 4vw;
     }
 
-    .icon p{
+    .icon p {
         margin-bottom: 10vw;
         margin-top: 4vw;
     }
 
-    .team button{
+    .team button {
         font-size: 4vw;
         padding: 2vw 10vw 2vw 10vw;
     }
 
-    #Meet_The_team{
+    #Meet_The_team {
         font-size: 6vw;
     }
 
-    .team img{
+    .team img {
         margin-top: 30vw;
         height: 25vw;
         width: 100vw;
     }
-    
-    iframe{
+
+    iframe {
         height: 170vw;
     }
 
